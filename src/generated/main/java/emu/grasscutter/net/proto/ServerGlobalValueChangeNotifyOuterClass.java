@@ -19,29 +19,24 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float value = 6;</code>
+     * <code>float value = 10;</code>
      * @return The value.
      */
     float getValue();
 
     /**
-     * <code>uint32 key_hash = 2;</code>
+     * <code>uint32 key_hash = 14;</code>
      * @return The keyHash.
      */
     int getKeyHash();
 
     /**
-     * <code>uint32 entity_id = 14;</code>
+     * <code>uint32 entity_id = 5;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
-   * <pre>
-   * CmdId: 28698
-   * Obf: GKKPLLOCNMC
-   * </pre>
-   *
    * Protobuf type {@code ServerGlobalValueChangeNotify}
    */
   public static final class ServerGlobalValueChangeNotify extends
@@ -86,19 +81,19 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 40: {
 
-              keyHash_ = input.readUInt32();
+              entityId_ = input.readUInt32();
               break;
             }
-            case 53: {
+            case 85: {
 
               value_ = input.readFloat();
               break;
             }
             case 112: {
 
-              entityId_ = input.readUInt32();
+              keyHash_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +128,10 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
               emu.grasscutter.net.proto.ServerGlobalValueChangeNotifyOuterClass.ServerGlobalValueChangeNotify.class, emu.grasscutter.net.proto.ServerGlobalValueChangeNotifyOuterClass.ServerGlobalValueChangeNotify.Builder.class);
     }
 
-    public static final int VALUE_FIELD_NUMBER = 6;
+    public static final int VALUE_FIELD_NUMBER = 10;
     private float value_;
     /**
-     * <code>float value = 6;</code>
+     * <code>float value = 10;</code>
      * @return The value.
      */
     @java.lang.Override
@@ -144,10 +139,10 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
       return value_;
     }
 
-    public static final int KEY_HASH_FIELD_NUMBER = 2;
+    public static final int KEY_HASH_FIELD_NUMBER = 14;
     private int keyHash_;
     /**
-     * <code>uint32 key_hash = 2;</code>
+     * <code>uint32 key_hash = 14;</code>
      * @return The keyHash.
      */
     @java.lang.Override
@@ -155,10 +150,10 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
       return keyHash_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 14;
+    public static final int ENTITY_ID_FIELD_NUMBER = 5;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 14;</code>
+     * <code>uint32 entity_id = 5;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -180,14 +175,14 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (keyHash_ != 0) {
-        output.writeUInt32(2, keyHash_);
+      if (entityId_ != 0) {
+        output.writeUInt32(5, entityId_);
       }
       if (value_ != 0F) {
-        output.writeFloat(6, value_);
+        output.writeFloat(10, value_);
       }
-      if (entityId_ != 0) {
-        output.writeUInt32(14, entityId_);
+      if (keyHash_ != 0) {
+        output.writeUInt32(14, keyHash_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +193,17 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (keyHash_ != 0) {
+      if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, keyHash_);
+          .computeUInt32Size(5, entityId_);
       }
       if (value_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(6, value_);
+          .computeFloatSize(10, value_);
       }
-      if (entityId_ != 0) {
+      if (keyHash_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, entityId_);
+          .computeUInt32Size(14, keyHash_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -346,11 +341,6 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 28698
-     * Obf: GKKPLLOCNMC
-     * </pre>
-     *
      * Protobuf type {@code ServerGlobalValueChangeNotify}
      */
     public static final class Builder extends
@@ -511,7 +501,7 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
 
       private float value_ ;
       /**
-       * <code>float value = 6;</code>
+       * <code>float value = 10;</code>
        * @return The value.
        */
       @java.lang.Override
@@ -519,7 +509,7 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
         return value_;
       }
       /**
-       * <code>float value = 6;</code>
+       * <code>float value = 10;</code>
        * @param value The value to set.
        * @return This builder for chaining.
        */
@@ -530,7 +520,7 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>float value = 6;</code>
+       * <code>float value = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearValue() {
@@ -542,7 +532,7 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
 
       private int keyHash_ ;
       /**
-       * <code>uint32 key_hash = 2;</code>
+       * <code>uint32 key_hash = 14;</code>
        * @return The keyHash.
        */
       @java.lang.Override
@@ -550,7 +540,7 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
         return keyHash_;
       }
       /**
-       * <code>uint32 key_hash = 2;</code>
+       * <code>uint32 key_hash = 14;</code>
        * @param value The keyHash to set.
        * @return This builder for chaining.
        */
@@ -561,7 +551,7 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 key_hash = 2;</code>
+       * <code>uint32 key_hash = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearKeyHash() {
@@ -573,7 +563,7 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 14;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -581,7 +571,7 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 14;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -592,7 +582,7 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 14;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -670,7 +660,7 @@ public final class ServerGlobalValueChangeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#ServerGlobalValueChangeNotify.proto\"S\n" +
       "\035ServerGlobalValueChangeNotify\022\r\n\005value\030" +
-      "\006 \001(\002\022\020\n\010key_hash\030\002 \001(\r\022\021\n\tentity_id\030\016 \001" +
+      "\n \001(\002\022\020\n\010key_hash\030\016 \001(\r\022\021\n\tentity_id\030\005 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -1839,7 +1839,6 @@ public final class PacketOpcodes {
     public static final int IMHIAAEHKLI = 6489;
     public static final int DOFCMHIELII = 7746;
     public static final int CMPLLMJFAMD = 5001;
-    public static final int OJJNCCKGJNA = 7036;
     public static final int GEFIGHDGJED = 9390;
     public static final int CAHINAGOHLN = 9266;
     public static final int GFNPJOAODDB = 9877;
@@ -4851,7 +4850,7 @@ public final class PacketOpcodes {
     public static final int ServerCombatEndNotify = 1;
     public static final int ServerCondMeetQuestListUpdateNotify = 1;
     public static final int ServerDisconnectClientNotify = 1;
-    public static final int ServerGlobalValueChangeNotify = 1;
+    public static final int ServerGlobalValueChangeNotify = 7036;
     public static final int ServerLogNotify = 1;
     public static final int ServerMessageNotify = 1;
     public static final int ServerTimeNotify = 1;
