@@ -58,7 +58,7 @@ public class CommandHelpers {
 
     public static float parseRelative(String input, Float current) {
         if (input.contains("~")) { // Relative
-            if (!input.equals("~")) { // Relative with offset
+            if (!"~".equals(input)) { // Relative with offset
                 current += Float.parseFloat(input.replace("~", ""));
             } // Else no offset, no modification
         } else { // Absolute
@@ -72,11 +72,11 @@ public class CommandHelpers {
         Position offset = new Position();
         Position target = new Position(curPos);
         if (inputX.contains("~")) { // Relative
-            if (!inputX.equals("~")) { // Relative with offset
+            if (!"~".equals(inputX)) { // Relative with offset
                 target.addX(Float.parseFloat(inputX.replace("~", "")));
             }
         } else if (inputX.contains("^")) {
-            if (!inputX.equals("^")) {
+            if (!"^".equals(inputX)) {
                 offset.setX(Float.parseFloat(inputX.replace("^", "")));
             }
         } else { // Absolute
@@ -84,11 +84,11 @@ public class CommandHelpers {
         }
 
         if (inputY.contains("~")) { // Relative
-            if (!inputY.equals("~")) { // Relative with offset
+            if (!"~".equals(inputY)) { // Relative with offset
                 target.addY(Float.parseFloat(inputY.replace("~", "")));
             }
         } else if (inputY.contains("^")) {
-            if (!inputY.equals("^")) {
+            if (!"^".equals(inputY)) {
                 offset.setY(Float.parseFloat(inputY.replace("^", "")));
             }
         } else { // Absolute
@@ -96,11 +96,11 @@ public class CommandHelpers {
         }
 
         if (inputZ.contains("~")) { // Relative
-            if (!inputZ.equals("~")) { // Relative with offset
+            if (!"~".equals(inputZ)) { // Relative with offset
                 target.addZ(Float.parseFloat(inputZ.replace("~", "")));
             }
         } else if (inputZ.contains("^")) {
-            if (!inputZ.equals("^")) {
+            if (!"^".equals(inputZ)) {
                 offset.setZ(Float.parseFloat(inputZ.replace("^", "")));
             }
         } else { // Absolute

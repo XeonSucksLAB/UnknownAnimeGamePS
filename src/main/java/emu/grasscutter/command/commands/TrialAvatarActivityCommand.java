@@ -99,7 +99,7 @@ public final class TrialAvatarActivityCommand implements CommandHandler {
                             translate(
                                     sender, "commands.trialAvatarActivity.success_dungeon", Integer.parseInt(param)));
                 } else {
-                    if (!param.equals("all")) {
+                     if (!"all".equals(param)) {
                         CommandHandler.sendMessage(
                                 sender, translate(sender, "commands.trialAvatarActivity.invalid_param"));
                         return;
@@ -131,7 +131,7 @@ public final class TrialAvatarActivityCommand implements CommandHandler {
                             translate(
                                     sender, "commands.trialAvatarActivity.success_reward", Integer.parseInt(param)));
                 } else {
-                    if (!param.toLowerCase().equals("all")) {
+                     if (!"all".equals(param.toLowerCase())) {
                         CommandHandler.sendMessage(
                                 sender, translate(sender, "commands.trialAvatarActivity.invalid_param"));
                         return;

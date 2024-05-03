@@ -1361,7 +1361,7 @@ public class ScriptLib {
     // TODO: SetDarkPressureLevel
 
     public int SetEntityServerGlobalValueByConfigId(int cfgId, String sgvName, int value) {
-        logger.debug("[LUA] Call SetEntityServerGlobalValueByConfigId with {}, {}, {}", cfgId, sgvName, value);
+        logger.info("[LUA] Call SetEntityServerGlobalValueByConfigId with {}, {}, {}", cfgId, sgvName, value);
         var scriptManager = this.getSceneScriptManager();
         if (scriptManager == null) return 1;
         var scene = scriptManager.getScene();
@@ -1373,7 +1373,7 @@ public class ScriptLib {
     }
 
     public int SetEntityServerGlobalValueByEntityId(int entityId, String sgvName, int value) {
-        logger.debug("[LUA] Call SetEntityServerGlobalValueByEntityId with {}, {}, {}", entityId, sgvName, value);
+        logger.info("[LUA] Call SetEntityServerGlobalValueByEntityId with {}, {}, {}", entityId, sgvName, value);
         var scriptManager = this.getSceneScriptManager();
         if (scriptManager == null) return 1;
         var scene = scriptManager.getScene();

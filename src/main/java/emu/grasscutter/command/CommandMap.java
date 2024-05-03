@@ -258,7 +258,7 @@ public final class CommandMap {
         if (label.startsWith("@")) { // @[UID]
             this.setPlayerTarget(playerId, player, label.substring(1));
             return;
-        } else if (label.equalsIgnoreCase("target")) { // target [[@]UID]
+        } else if ("target".equalsIgnoreCase(label)) { // target [[@]UID]
             if (!args.isEmpty()) {
                 String targetUidStr = args.get(0);
                 if (targetUidStr.startsWith("@")) {

@@ -113,7 +113,7 @@ public interface StartupArguments {
      * @return False to continue execution.
      */
     private static boolean enableDebug(String parameter) {
-        if (parameter != null && parameter.equals("all")) {
+        if (parameter != null && "all".equals(parameter)) {
             // Override default debug configs
             GAME_INFO.isShowLoopPackets = DEBUG_MODE_INFO.isShowLoopPackets;
             GAME_INFO.isShowPacketPayload = DEBUG_MODE_INFO.isShowPacketPayload;

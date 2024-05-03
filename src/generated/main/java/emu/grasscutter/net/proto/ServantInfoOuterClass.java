@@ -19,22 +19,18 @@ public final class ServantInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 master_entity_id = 1;</code>
+     * <code>uint32 master_entity_id = 2;</code>
      * @return The masterEntityId.
      */
     int getMasterEntityId();
 
     /**
-     * <code>uint32 born_slot_index = 2;</code>
+     * <code>uint32 born_slot_index = 1;</code>
      * @return The bornSlotIndex.
      */
     int getBornSlotIndex();
   }
   /**
-   * <pre>
-   * Obf: CILIBMDMDLK
-   * </pre>
-   *
    * Protobuf type {@code ServantInfo}
    */
   public static final class ServantInfo extends
@@ -81,12 +77,12 @@ public final class ServantInfoOuterClass {
               break;
             case 8: {
 
-              masterEntityId_ = input.readUInt32();
+              bornSlotIndex_ = input.readUInt32();
               break;
             }
             case 16: {
 
-              bornSlotIndex_ = input.readUInt32();
+              masterEntityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,10 +117,10 @@ public final class ServantInfoOuterClass {
               emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo.class, emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo.Builder.class);
     }
 
-    public static final int MASTER_ENTITY_ID_FIELD_NUMBER = 1;
+    public static final int MASTER_ENTITY_ID_FIELD_NUMBER = 2;
     private int masterEntityId_;
     /**
-     * <code>uint32 master_entity_id = 1;</code>
+     * <code>uint32 master_entity_id = 2;</code>
      * @return The masterEntityId.
      */
     @java.lang.Override
@@ -132,10 +128,10 @@ public final class ServantInfoOuterClass {
       return masterEntityId_;
     }
 
-    public static final int BORN_SLOT_INDEX_FIELD_NUMBER = 2;
+    public static final int BORN_SLOT_INDEX_FIELD_NUMBER = 1;
     private int bornSlotIndex_;
     /**
-     * <code>uint32 born_slot_index = 2;</code>
+     * <code>uint32 born_slot_index = 1;</code>
      * @return The bornSlotIndex.
      */
     @java.lang.Override
@@ -157,11 +153,11 @@ public final class ServantInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (masterEntityId_ != 0) {
-        output.writeUInt32(1, masterEntityId_);
-      }
       if (bornSlotIndex_ != 0) {
-        output.writeUInt32(2, bornSlotIndex_);
+        output.writeUInt32(1, bornSlotIndex_);
+      }
+      if (masterEntityId_ != 0) {
+        output.writeUInt32(2, masterEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class ServantInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (masterEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, masterEntityId_);
-      }
       if (bornSlotIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, bornSlotIndex_);
+          .computeUInt32Size(1, bornSlotIndex_);
+      }
+      if (masterEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, masterEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -310,10 +306,6 @@ public final class ServantInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: CILIBMDMDLK
-     * </pre>
-     *
      * Protobuf type {@code ServantInfo}
      */
     public static final class Builder extends
@@ -468,7 +460,7 @@ public final class ServantInfoOuterClass {
 
       private int masterEntityId_ ;
       /**
-       * <code>uint32 master_entity_id = 1;</code>
+       * <code>uint32 master_entity_id = 2;</code>
        * @return The masterEntityId.
        */
       @java.lang.Override
@@ -476,7 +468,7 @@ public final class ServantInfoOuterClass {
         return masterEntityId_;
       }
       /**
-       * <code>uint32 master_entity_id = 1;</code>
+       * <code>uint32 master_entity_id = 2;</code>
        * @param value The masterEntityId to set.
        * @return This builder for chaining.
        */
@@ -487,7 +479,7 @@ public final class ServantInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 master_entity_id = 1;</code>
+       * <code>uint32 master_entity_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearMasterEntityId() {
@@ -499,7 +491,7 @@ public final class ServantInfoOuterClass {
 
       private int bornSlotIndex_ ;
       /**
-       * <code>uint32 born_slot_index = 2;</code>
+       * <code>uint32 born_slot_index = 1;</code>
        * @return The bornSlotIndex.
        */
       @java.lang.Override
@@ -507,7 +499,7 @@ public final class ServantInfoOuterClass {
         return bornSlotIndex_;
       }
       /**
-       * <code>uint32 born_slot_index = 2;</code>
+       * <code>uint32 born_slot_index = 1;</code>
        * @param value The bornSlotIndex to set.
        * @return This builder for chaining.
        */
@@ -518,7 +510,7 @@ public final class ServantInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 born_slot_index = 2;</code>
+       * <code>uint32 born_slot_index = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearBornSlotIndex() {
@@ -595,8 +587,8 @@ public final class ServantInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021ServantInfo.proto\"@\n\013ServantInfo\022\030\n\020ma" +
-      "ster_entity_id\030\001 \001(\r\022\027\n\017born_slot_index\030" +
-      "\002 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "ster_entity_id\030\002 \001(\r\022\027\n\017born_slot_index\030" +
+      "\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

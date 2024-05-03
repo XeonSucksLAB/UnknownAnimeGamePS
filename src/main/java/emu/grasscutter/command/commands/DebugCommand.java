@@ -36,7 +36,7 @@ public final class DebugCommand implements CommandHandler {
                 // because there can be more than one entity with
                 // the given config ID.
                 var entity =
-                        args.size() > 1 && args.get(1).equals("config")
+                        args.size() > 1 && "config".equals(args.get(1))
                                 ? scene.getFirstEntityByConfigId(entityId)
                                 : scene.getEntityById(entityId);
                 if (entity == null) {

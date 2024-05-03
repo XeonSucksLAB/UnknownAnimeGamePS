@@ -64,7 +64,7 @@ public final class AnnouncementsHandler implements Router {
         StringJoiner stringJoiner = new StringJoiner("/");
         for (String pathName : path) {
             // Filter the illegal payload to prevent directory traversal
-            if (!pathName.isEmpty() && !pathName.equals("..") && !pathName.contains("\\")) {
+            if (!pathName.isEmpty() && !"..".equals(pathName) && !pathName.contains("\\")) {
                 stringJoiner.add(pathName);
             }
         }

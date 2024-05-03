@@ -20,7 +20,7 @@ public final class ListCommand implements CommandHandler {
         boolean needUID = false;
 
         if (args.size() > 0) {
-            needUID = args.get(0).equals("uid");
+            needUID = "uid".equals(args.get(0));
         }
 
         CommandHandler.sendMessage(

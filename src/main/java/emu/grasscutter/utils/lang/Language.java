@@ -421,7 +421,7 @@ public final class Language {
         if (translations.containsKey(key)) return translations.get(key);
         String valueNotFoundPattern = "This value does not exist. Please report this to the Discord: ";
         String result = valueNotFoundPattern + key;
-        if (!languageCode.equals("en-US")) {
+        if (!"en-US".equals(languageCode)) {
             String englishValue = getLanguage("en-US").get(key);
             if (!englishValue.contains(valueNotFoundPattern)) {
                 result += "\nhere is english version:\n" + englishValue;

@@ -75,7 +75,7 @@ public final class FileUtils {
                             (p, a) -> {
                                 var filename = p.getFileName();
                                 if (filename == null) return false;
-                                return filename.toString().equals("ExcelBinOutput");
+                                return "ExcelBinOutput".equals(filename.toString());
                             })) {
                 var excelBinOutput = pathStream.findFirst();
                 if (excelBinOutput.isPresent()) {

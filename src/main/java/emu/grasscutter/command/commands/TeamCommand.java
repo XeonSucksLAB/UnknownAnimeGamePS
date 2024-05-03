@@ -209,9 +209,9 @@ public final class TeamCommand implements CommandHandler {
 
     private List<Integer> transformToIndexes(String metaIndexes, int listLength) {
         // step 1: check if metaIndexes is a special constants
-        if (metaIndexes.equals("first")) {
+        if ("first".equals(metaIndexes)) {
             return List.of(1);
-        } else if (metaIndexes.equals("last")) {
+        } else if ("last".equals(metaIndexes)) {
             return List.of(listLength);
         }
 

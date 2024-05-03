@@ -40,7 +40,7 @@ public final class SetConstCommand implements CommandHandler {
             }
             // Check if there's an additional argument which is "all", if it does then go
             // setAllConstellation
-            if (args.size() > 1 && args.get(1).equalsIgnoreCase("all")) {
+            if (args.size() > 1 && "all".equalsIgnoreCase(args.get(1))) {
                 this.setAllConstellation(targetPlayer, constLevel);
                 CommandHandler.sendTranslatedMessage(sender, "commands.setConst.successall", constLevel);
             } else sendUsageMessage(sender);
