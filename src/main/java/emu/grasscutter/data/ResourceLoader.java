@@ -570,7 +570,7 @@ public final class ResourceLoader {
 
         try {
             val questEncryptionMap = GameData.getMainQuestEncryptionMap();
-            var path = "QuestEncryptionKeys.json";
+            var path = "Server/QuestEncryptionKeys.json";
             try {
                 JsonUtils.loadToList(getResourcePath(path), QuestEncryptionKey.class)
                         .forEach(key -> questEncryptionMap.put(key.getMainQuestId(), key));

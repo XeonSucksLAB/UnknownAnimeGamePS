@@ -19,13 +19,13 @@ public final class CutSceneBeginNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cutscene_id = 11;</code>
+     * <code>uint32 cutscene_id = 7;</code>
      * @return The cutsceneId.
      */
     int getCutsceneId();
 
     /**
-     * <code>bool is_wait_others = 8;</code>
+     * <code>bool is_wait_others = 12;</code>
      * @return The isWaitOthers.
      */
     boolean getIsWaitOthers();
@@ -56,8 +56,7 @@ public final class CutSceneBeginNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 418
-   * Obf: LKBOJOLENCC
+   * CmdId: 6864
    * </pre>
    *
    * Protobuf type {@code CutSceneBeginNotify}
@@ -106,14 +105,14 @@ public final class CutSceneBeginNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
-
-              isWaitOthers_ = input.readBool();
-              break;
-            }
-            case 88: {
+            case 56: {
 
               cutsceneId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              isWaitOthers_ = input.readBool();
               break;
             }
             case 122: {
@@ -160,10 +159,10 @@ public final class CutSceneBeginNotifyOuterClass {
               emu.grasscutter.net.proto.CutSceneBeginNotifyOuterClass.CutSceneBeginNotify.class, emu.grasscutter.net.proto.CutSceneBeginNotifyOuterClass.CutSceneBeginNotify.Builder.class);
     }
 
-    public static final int CUTSCENE_ID_FIELD_NUMBER = 11;
+    public static final int CUTSCENE_ID_FIELD_NUMBER = 7;
     private int cutsceneId_;
     /**
-     * <code>uint32 cutscene_id = 11;</code>
+     * <code>uint32 cutscene_id = 7;</code>
      * @return The cutsceneId.
      */
     @java.lang.Override
@@ -171,10 +170,10 @@ public final class CutSceneBeginNotifyOuterClass {
       return cutsceneId_;
     }
 
-    public static final int IS_WAIT_OTHERS_FIELD_NUMBER = 8;
+    public static final int IS_WAIT_OTHERS_FIELD_NUMBER = 12;
     private boolean isWaitOthers_;
     /**
-     * <code>bool is_wait_others = 8;</code>
+     * <code>bool is_wait_others = 12;</code>
      * @return The isWaitOthers.
      */
     @java.lang.Override
@@ -236,11 +235,11 @@ public final class CutSceneBeginNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isWaitOthers_ != false) {
-        output.writeBool(8, isWaitOthers_);
-      }
       if (cutsceneId_ != 0) {
-        output.writeUInt32(11, cutsceneId_);
+        output.writeUInt32(7, cutsceneId_);
+      }
+      if (isWaitOthers_ != false) {
+        output.writeBool(12, isWaitOthers_);
       }
       for (int i = 0; i < extraParamList_.size(); i++) {
         output.writeMessage(15, extraParamList_.get(i));
@@ -254,13 +253,13 @@ public final class CutSceneBeginNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isWaitOthers_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isWaitOthers_);
-      }
       if (cutsceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, cutsceneId_);
+          .computeUInt32Size(7, cutsceneId_);
+      }
+      if (isWaitOthers_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, isWaitOthers_);
       }
       for (int i = 0; i < extraParamList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -404,8 +403,7 @@ public final class CutSceneBeginNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 418
-     * Obf: LKBOJOLENCC
+     * CmdId: 6864
      * </pre>
      *
      * Protobuf type {@code CutSceneBeginNotify}
@@ -606,7 +604,7 @@ public final class CutSceneBeginNotifyOuterClass {
 
       private int cutsceneId_ ;
       /**
-       * <code>uint32 cutscene_id = 11;</code>
+       * <code>uint32 cutscene_id = 7;</code>
        * @return The cutsceneId.
        */
       @java.lang.Override
@@ -614,7 +612,7 @@ public final class CutSceneBeginNotifyOuterClass {
         return cutsceneId_;
       }
       /**
-       * <code>uint32 cutscene_id = 11;</code>
+       * <code>uint32 cutscene_id = 7;</code>
        * @param value The cutsceneId to set.
        * @return This builder for chaining.
        */
@@ -625,7 +623,7 @@ public final class CutSceneBeginNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cutscene_id = 11;</code>
+       * <code>uint32 cutscene_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCutsceneId() {
@@ -637,7 +635,7 @@ public final class CutSceneBeginNotifyOuterClass {
 
       private boolean isWaitOthers_ ;
       /**
-       * <code>bool is_wait_others = 8;</code>
+       * <code>bool is_wait_others = 12;</code>
        * @return The isWaitOthers.
        */
       @java.lang.Override
@@ -645,7 +643,7 @@ public final class CutSceneBeginNotifyOuterClass {
         return isWaitOthers_;
       }
       /**
-       * <code>bool is_wait_others = 8;</code>
+       * <code>bool is_wait_others = 12;</code>
        * @param value The isWaitOthers to set.
        * @return This builder for chaining.
        */
@@ -656,7 +654,7 @@ public final class CutSceneBeginNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_wait_others = 8;</code>
+       * <code>bool is_wait_others = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsWaitOthers() {
@@ -974,7 +972,7 @@ public final class CutSceneBeginNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031CutSceneBeginNotify.proto\032\030CutSceneExt" +
       "raParam.proto\"q\n\023CutSceneBeginNotify\022\023\n\013" +
-      "cutscene_id\030\013 \001(\r\022\026\n\016is_wait_others\030\010 \001(" +
+      "cutscene_id\030\007 \001(\r\022\026\n\016is_wait_others\030\014 \001(" +
       "\010\022-\n\020extra_param_list\030\017 \003(\0132\023.CutSceneEx" +
       "traParamB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"

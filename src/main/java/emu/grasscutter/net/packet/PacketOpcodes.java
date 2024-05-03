@@ -1123,7 +1123,6 @@ public final class PacketOpcodes {
     public static final int LHNDPKAGMDE = 26691;
     public static final int PGHAEAPFAOC = 24797;
     public static final int PDFKFEDNBHI = 1839;
-    public static final int KHBDFFFPFCB = 6864;
     public static final int HPIHCDJCHIK = 4774;
     public static final int FCMLONODIOP = 27769;
     public static final int KKBLELBHAFE = 28846;
@@ -3251,7 +3250,7 @@ public final class PacketOpcodes {
     public static final int CustomDungeonOfficialNotify = 1;
     public static final int CustomDungeonRecoverNotify = 1;
     public static final int CustomDungeonUpdateNotify = 1;
-    public static final int CutSceneBeginNotify = 1;
+    public static final int CutSceneBeginNotify = 6864;
     public static final int CutSceneEndNotify = 1;
     public static final int CutSceneFinishNotify = 1;
     public static final int DAILBGKEPIG = 1;
