@@ -1,0 +1,55 @@
+name: "Build"
+on:
+  workflow_dispatch: ~
+  push:
+    paths:
+      - "**.java"
+    branches:
+      - "stable"
+      - "development"
+      - "unstable"
+  pull_request:
+    paths:
+      - "**.java"
+    types:
+      - opened
+      - synchronize
+      - reopened
+jobs:
+  Build-Server-Jar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Cache gradle files
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+            ./.gradle/loom-cache
+          key: ${{ runner.os }}-gradle-${{ hashFiles('*.gradle', 'gradle.properties', '**/*.accesswidener') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+      - name: Download Handbook
+        uses: suisei-cn/actions-download-file@v1.4.0
+        with:
+          url: https://api.grasscutter.io/static/handbook.html
+          target: src/main/resources/html/
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
+      - name: lenquan
+        run: sed -i 's#grasscutter.io#gmyxs.github.io#g' src/main/java/emu/grasscutter/game/Account.java && sed -i 's#10000#188800000#g' src/main/java/emu/grasscutter/database/DatabaseCounter.java && sed -i 's#欢迎使用 Grasscutter#冷权公益4.6原神GC指令服#g' src/main/resources/languages/zh-CN.json && sed -i 's#Traveler#冷权#g' src/main/java/emu/grasscutter/game/player/Player.java && sed -i 's#this.signature = "#this.signature = "官方QQ群563867095,公益游戏,请勿倒卖#g' src/main/java/emu/grasscutter/game/player/Player.java
+      - name: Run Gradle
+        run: ./gradlew -PskipHandbook=1 && ./gradlew jar -PskipHandbook=1
+      - name: Upload build
+        uses: actions/upload-artifact@v3
+        with:
+          name: grasscutter
+          path: |
+               *.jar
