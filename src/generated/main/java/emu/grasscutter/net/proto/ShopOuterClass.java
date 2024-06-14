@@ -97,43 +97,43 @@ public final class ShopOuterClass {
         int index);
 
     /**
-     * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+     * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct> 
         getConcertProductListList();
     /**
-     * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+     * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
      */
     emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct getConcertProductList(int index);
     /**
-     * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+     * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
      */
     int getConcertProductListCount();
     /**
-     * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+     * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProductOrBuilder> 
         getConcertProductListOrBuilderList();
     /**
-     * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+     * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
      */
     emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProductOrBuilder getConcertProductListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 city_id = 14;</code>
+     * <code>uint32 city_id = 7;</code>
      * @return The cityId.
      */
     int getCityId();
 
     /**
-     * <code>uint32 next_refresh_time = 13;</code>
+     * <code>uint32 next_refresh_time = 3;</code>
      * @return The nextRefreshTime.
      */
     int getNextRefreshTime();
 
     /**
-     * <code>uint32 city_reputation_level = 7;</code>
+     * <code>uint32 city_reputation_level = 13;</code>
      * @return The cityReputationLevel.
      */
     int getCityReputationLevel();
@@ -188,13 +188,18 @@ public final class ShopOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 concertProductList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct>();
                 mutable_bitField0_ |= 0x00000008;
               }
               concertProductList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.parser(), extensionRegistry));
+              break;
+            }
+            case 24: {
+
+              nextRefreshTime_ = input.readUInt32();
               break;
             }
             case 50: {
@@ -208,7 +213,7 @@ public final class ShopOuterClass {
             }
             case 56: {
 
-              cityReputationLevel_ = input.readUInt32();
+              cityId_ = input.readUInt32();
               break;
             }
             case 72: {
@@ -227,12 +232,7 @@ public final class ShopOuterClass {
             }
             case 104: {
 
-              nextRefreshTime_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              cityId_ = input.readUInt32();
+              cityReputationLevel_ = input.readUInt32();
               break;
             }
             case 122: {
@@ -419,17 +419,17 @@ public final class ShopOuterClass {
       return mcoinProductList_.get(index);
     }
 
-    public static final int CONCERT_PRODUCT_LIST_FIELD_NUMBER = 4;
+    public static final int CONCERT_PRODUCT_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct> concertProductList_;
     /**
-     * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+     * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct> getConcertProductListList() {
       return concertProductList_;
     }
     /**
-     * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+     * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProductOrBuilder> 
@@ -437,21 +437,21 @@ public final class ShopOuterClass {
       return concertProductList_;
     }
     /**
-     * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+     * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
      */
     @java.lang.Override
     public int getConcertProductListCount() {
       return concertProductList_.size();
     }
     /**
-     * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+     * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct getConcertProductList(int index) {
       return concertProductList_.get(index);
     }
     /**
-     * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+     * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProductOrBuilder getConcertProductListOrBuilder(
@@ -459,10 +459,10 @@ public final class ShopOuterClass {
       return concertProductList_.get(index);
     }
 
-    public static final int CITY_ID_FIELD_NUMBER = 14;
+    public static final int CITY_ID_FIELD_NUMBER = 7;
     private int cityId_;
     /**
-     * <code>uint32 city_id = 14;</code>
+     * <code>uint32 city_id = 7;</code>
      * @return The cityId.
      */
     @java.lang.Override
@@ -470,10 +470,10 @@ public final class ShopOuterClass {
       return cityId_;
     }
 
-    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 13;
+    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 3;
     private int nextRefreshTime_;
     /**
-     * <code>uint32 next_refresh_time = 13;</code>
+     * <code>uint32 next_refresh_time = 3;</code>
      * @return The nextRefreshTime.
      */
     @java.lang.Override
@@ -481,10 +481,10 @@ public final class ShopOuterClass {
       return nextRefreshTime_;
     }
 
-    public static final int CITY_REPUTATION_LEVEL_FIELD_NUMBER = 7;
+    public static final int CITY_REPUTATION_LEVEL_FIELD_NUMBER = 13;
     private int cityReputationLevel_;
     /**
-     * <code>uint32 city_reputation_level = 7;</code>
+     * <code>uint32 city_reputation_level = 13;</code>
      * @return The cityReputationLevel.
      */
     @java.lang.Override
@@ -507,13 +507,16 @@ public final class ShopOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < concertProductList_.size(); i++) {
-        output.writeMessage(4, concertProductList_.get(i));
+        output.writeMessage(2, concertProductList_.get(i));
+      }
+      if (nextRefreshTime_ != 0) {
+        output.writeUInt32(3, nextRefreshTime_);
       }
       for (int i = 0; i < cardProductList_.size(); i++) {
         output.writeMessage(6, cardProductList_.get(i));
       }
-      if (cityReputationLevel_ != 0) {
-        output.writeUInt32(7, cityReputationLevel_);
+      if (cityId_ != 0) {
+        output.writeUInt32(7, cityId_);
       }
       if (shopType_ != 0) {
         output.writeUInt32(9, shopType_);
@@ -521,11 +524,8 @@ public final class ShopOuterClass {
       for (int i = 0; i < goodsList_.size(); i++) {
         output.writeMessage(12, goodsList_.get(i));
       }
-      if (nextRefreshTime_ != 0) {
-        output.writeUInt32(13, nextRefreshTime_);
-      }
-      if (cityId_ != 0) {
-        output.writeUInt32(14, cityId_);
+      if (cityReputationLevel_ != 0) {
+        output.writeUInt32(13, cityReputationLevel_);
       }
       for (int i = 0; i < mcoinProductList_.size(); i++) {
         output.writeMessage(15, mcoinProductList_.get(i));
@@ -541,15 +541,19 @@ public final class ShopOuterClass {
       size = 0;
       for (int i = 0; i < concertProductList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, concertProductList_.get(i));
+          .computeMessageSize(2, concertProductList_.get(i));
+      }
+      if (nextRefreshTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, nextRefreshTime_);
       }
       for (int i = 0; i < cardProductList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, cardProductList_.get(i));
       }
-      if (cityReputationLevel_ != 0) {
+      if (cityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, cityReputationLevel_);
+          .computeUInt32Size(7, cityId_);
       }
       if (shopType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -559,13 +563,9 @@ public final class ShopOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(12, goodsList_.get(i));
       }
-      if (nextRefreshTime_ != 0) {
+      if (cityReputationLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, nextRefreshTime_);
-      }
-      if (cityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, cityId_);
+          .computeUInt32Size(13, cityReputationLevel_);
       }
       for (int i = 0; i < mcoinProductList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -1831,7 +1831,7 @@ public final class ShopOuterClass {
           emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct, emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder, emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProductOrBuilder> concertProductListBuilder_;
 
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct> getConcertProductListList() {
         if (concertProductListBuilder_ == null) {
@@ -1841,7 +1841,7 @@ public final class ShopOuterClass {
         }
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public int getConcertProductListCount() {
         if (concertProductListBuilder_ == null) {
@@ -1851,7 +1851,7 @@ public final class ShopOuterClass {
         }
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct getConcertProductList(int index) {
         if (concertProductListBuilder_ == null) {
@@ -1861,7 +1861,7 @@ public final class ShopOuterClass {
         }
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public Builder setConcertProductList(
           int index, emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct value) {
@@ -1878,7 +1878,7 @@ public final class ShopOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public Builder setConcertProductList(
           int index, emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder builderForValue) {
@@ -1892,7 +1892,7 @@ public final class ShopOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public Builder addConcertProductList(emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct value) {
         if (concertProductListBuilder_ == null) {
@@ -1908,7 +1908,7 @@ public final class ShopOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public Builder addConcertProductList(
           int index, emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct value) {
@@ -1925,7 +1925,7 @@ public final class ShopOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public Builder addConcertProductList(
           emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder builderForValue) {
@@ -1939,7 +1939,7 @@ public final class ShopOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public Builder addConcertProductList(
           int index, emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder builderForValue) {
@@ -1953,7 +1953,7 @@ public final class ShopOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public Builder addAllConcertProductList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct> values) {
@@ -1968,7 +1968,7 @@ public final class ShopOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public Builder clearConcertProductList() {
         if (concertProductListBuilder_ == null) {
@@ -1981,7 +1981,7 @@ public final class ShopOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public Builder removeConcertProductList(int index) {
         if (concertProductListBuilder_ == null) {
@@ -1994,14 +1994,14 @@ public final class ShopOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder getConcertProductListBuilder(
           int index) {
         return getConcertProductListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProductOrBuilder getConcertProductListOrBuilder(
           int index) {
@@ -2011,7 +2011,7 @@ public final class ShopOuterClass {
         }
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProductOrBuilder> 
            getConcertProductListOrBuilderList() {
@@ -2022,14 +2022,14 @@ public final class ShopOuterClass {
         }
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder addConcertProductListBuilder() {
         return getConcertProductListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.getDefaultInstance());
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder addConcertProductListBuilder(
           int index) {
@@ -2037,7 +2037,7 @@ public final class ShopOuterClass {
             index, emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.getDefaultInstance());
       }
       /**
-       * <code>repeated .ShopConcertProduct concert_product_list = 4;</code>
+       * <code>repeated .ShopConcertProduct concert_product_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder> 
            getConcertProductListBuilderList() {
@@ -2060,7 +2060,7 @@ public final class ShopOuterClass {
 
       private int cityId_ ;
       /**
-       * <code>uint32 city_id = 14;</code>
+       * <code>uint32 city_id = 7;</code>
        * @return The cityId.
        */
       @java.lang.Override
@@ -2068,7 +2068,7 @@ public final class ShopOuterClass {
         return cityId_;
       }
       /**
-       * <code>uint32 city_id = 14;</code>
+       * <code>uint32 city_id = 7;</code>
        * @param value The cityId to set.
        * @return This builder for chaining.
        */
@@ -2079,7 +2079,7 @@ public final class ShopOuterClass {
         return this;
       }
       /**
-       * <code>uint32 city_id = 14;</code>
+       * <code>uint32 city_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCityId() {
@@ -2091,7 +2091,7 @@ public final class ShopOuterClass {
 
       private int nextRefreshTime_ ;
       /**
-       * <code>uint32 next_refresh_time = 13;</code>
+       * <code>uint32 next_refresh_time = 3;</code>
        * @return The nextRefreshTime.
        */
       @java.lang.Override
@@ -2099,7 +2099,7 @@ public final class ShopOuterClass {
         return nextRefreshTime_;
       }
       /**
-       * <code>uint32 next_refresh_time = 13;</code>
+       * <code>uint32 next_refresh_time = 3;</code>
        * @param value The nextRefreshTime to set.
        * @return This builder for chaining.
        */
@@ -2110,7 +2110,7 @@ public final class ShopOuterClass {
         return this;
       }
       /**
-       * <code>uint32 next_refresh_time = 13;</code>
+       * <code>uint32 next_refresh_time = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearNextRefreshTime() {
@@ -2122,7 +2122,7 @@ public final class ShopOuterClass {
 
       private int cityReputationLevel_ ;
       /**
-       * <code>uint32 city_reputation_level = 7;</code>
+       * <code>uint32 city_reputation_level = 13;</code>
        * @return The cityReputationLevel.
        */
       @java.lang.Override
@@ -2130,7 +2130,7 @@ public final class ShopOuterClass {
         return cityReputationLevel_;
       }
       /**
-       * <code>uint32 city_reputation_level = 7;</code>
+       * <code>uint32 city_reputation_level = 13;</code>
        * @param value The cityReputationLevel to set.
        * @return This builder for chaining.
        */
@@ -2141,7 +2141,7 @@ public final class ShopOuterClass {
         return this;
       }
       /**
-       * <code>uint32 city_reputation_level = 7;</code>
+       * <code>uint32 city_reputation_level = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearCityReputationLevel() {
@@ -2223,10 +2223,10 @@ public final class ShopOuterClass {
       "type\030\t \001(\r\022\036\n\ngoods_list\030\014 \003(\0132\n.ShopGoo" +
       "ds\022+\n\021card_product_list\030\006 \003(\0132\020.ShopCard" +
       "Product\022-\n\022mcoin_product_list\030\017 \003(\0132\021.Sh" +
-      "opMcoinProduct\0221\n\024concert_product_list\030\004" +
-      " \003(\0132\023.ShopConcertProduct\022\017\n\007city_id\030\016 \001" +
-      "(\r\022\031\n\021next_refresh_time\030\r \001(\r\022\035\n\025city_re" +
-      "putation_level\030\007 \001(\rB\033\n\031emu.grasscutter." +
+      "opMcoinProduct\0221\n\024concert_product_list\030\002" +
+      " \003(\0132\023.ShopConcertProduct\022\017\n\007city_id\030\007 \001" +
+      "(\r\022\031\n\021next_refresh_time\030\003 \001(\r\022\035\n\025city_re" +
+      "putation_level\030\r \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

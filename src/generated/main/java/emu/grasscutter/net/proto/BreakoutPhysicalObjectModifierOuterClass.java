@@ -115,10 +115,6 @@ public final class BreakoutPhysicalObjectModifierOuterClass {
     int getChoosePlayerCount();
   }
   /**
-   * <pre>
-   * Obf: NFKLEIMGKJD
-   * </pre>
-   *
    * Protobuf type {@code BreakoutPhysicalObjectModifier}
    */
   public static final class BreakoutPhysicalObjectModifier extends
@@ -773,10 +769,6 @@ public final class BreakoutPhysicalObjectModifierOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NFKLEIMGKJD
-     * </pre>
-     *
      * Protobuf type {@code BreakoutPhysicalObjectModifier}
      */
     public static final class Builder extends

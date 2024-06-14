@@ -19,18 +19,22 @@ public final class SetPlayerSignatureReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string signature = 6;</code>
+     * <code>string signature = 11;</code>
      * @return The signature.
      */
     java.lang.String getSignature();
     /**
-     * <code>string signature = 6;</code>
+     * <code>string signature = 11;</code>
      * @return The bytes for signature.
      */
     com.google.protobuf.ByteString
         getSignatureBytes();
   }
   /**
+   * <pre>
+   * CmdId: 25315
+   * </pre>
+   *
    * Protobuf type {@code SetPlayerSignatureReq}
    */
   public static final class SetPlayerSignatureReq extends
@@ -76,7 +80,7 @@ public final class SetPlayerSignatureReqOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
+            case 90: {
               java.lang.String s = input.readStringRequireUtf8();
 
               signature_ = s;
@@ -114,10 +118,10 @@ public final class SetPlayerSignatureReqOuterClass {
               emu.grasscutter.net.proto.SetPlayerSignatureReqOuterClass.SetPlayerSignatureReq.class, emu.grasscutter.net.proto.SetPlayerSignatureReqOuterClass.SetPlayerSignatureReq.Builder.class);
     }
 
-    public static final int SIGNATURE_FIELD_NUMBER = 6;
+    public static final int SIGNATURE_FIELD_NUMBER = 11;
     private volatile java.lang.Object signature_;
     /**
-     * <code>string signature = 6;</code>
+     * <code>string signature = 11;</code>
      * @return The signature.
      */
     @java.lang.Override
@@ -134,7 +138,7 @@ public final class SetPlayerSignatureReqOuterClass {
       }
     }
     /**
-     * <code>string signature = 6;</code>
+     * <code>string signature = 11;</code>
      * @return The bytes for signature.
      */
     @java.lang.Override
@@ -167,7 +171,7 @@ public final class SetPlayerSignatureReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, signature_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, signature_);
       }
       unknownFields.writeTo(output);
     }
@@ -179,7 +183,7 @@ public final class SetPlayerSignatureReqOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, signature_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, signature_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -307,6 +311,10 @@ public final class SetPlayerSignatureReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 25315
+     * </pre>
+     *
      * Protobuf type {@code SetPlayerSignatureReq}
      */
     public static final class Builder extends
@@ -456,7 +464,7 @@ public final class SetPlayerSignatureReqOuterClass {
 
       private java.lang.Object signature_ = "";
       /**
-       * <code>string signature = 6;</code>
+       * <code>string signature = 11;</code>
        * @return The signature.
        */
       public java.lang.String getSignature() {
@@ -472,7 +480,7 @@ public final class SetPlayerSignatureReqOuterClass {
         }
       }
       /**
-       * <code>string signature = 6;</code>
+       * <code>string signature = 11;</code>
        * @return The bytes for signature.
        */
       public com.google.protobuf.ByteString
@@ -489,7 +497,7 @@ public final class SetPlayerSignatureReqOuterClass {
         }
       }
       /**
-       * <code>string signature = 6;</code>
+       * <code>string signature = 11;</code>
        * @param value The signature to set.
        * @return This builder for chaining.
        */
@@ -504,7 +512,7 @@ public final class SetPlayerSignatureReqOuterClass {
         return this;
       }
       /**
-       * <code>string signature = 6;</code>
+       * <code>string signature = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearSignature() {
@@ -514,7 +522,7 @@ public final class SetPlayerSignatureReqOuterClass {
         return this;
       }
       /**
-       * <code>string signature = 6;</code>
+       * <code>string signature = 11;</code>
        * @param value The bytes for signature to set.
        * @return This builder for chaining.
        */
@@ -597,7 +605,7 @@ public final class SetPlayerSignatureReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033SetPlayerSignatureReq.proto\"*\n\025SetPlay" +
-      "erSignatureReq\022\021\n\tsignature\030\006 \001(\tB\033\n\031emu" +
+      "erSignatureReq\022\021\n\tsignature\030\013 \001(\tB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

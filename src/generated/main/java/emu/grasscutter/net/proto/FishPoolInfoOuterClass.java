@@ -48,10 +48,6 @@ public final class FishPoolInfoOuterClass {
     int getTodayFishNum();
   }
   /**
-   * <pre>
-   * Obf: NPDMIJKKJPA
-   * </pre>
-   *
    * Protobuf type {@code FishPoolInfo}
    */
   public static final class FishPoolInfo extends
@@ -409,10 +405,6 @@ public final class FishPoolInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NPDMIJKKJPA
-     * </pre>
-     *
      * Protobuf type {@code FishPoolInfo}
      */
     public static final class Builder extends

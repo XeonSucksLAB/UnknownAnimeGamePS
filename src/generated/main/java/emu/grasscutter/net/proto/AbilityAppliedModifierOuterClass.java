@@ -133,10 +133,6 @@ public final class AbilityAppliedModifierOuterClass {
     boolean getIsServerbuffModifier();
   }
   /**
-   * <pre>
-   * Obf: OAHPGFENJJK
-   * </pre>
-   *
    * Protobuf type {@code AbilityAppliedModifier}
    */
   public static final class AbilityAppliedModifier extends
@@ -825,10 +821,6 @@ public final class AbilityAppliedModifierOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OAHPGFENJJK
-     * </pre>
-     *
      * Protobuf type {@code AbilityAppliedModifier}
      */
     public static final class Builder extends

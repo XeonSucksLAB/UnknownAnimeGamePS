@@ -26,7 +26,7 @@ public final class EnterSceneDoneReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 26367
+   * CmdId: 117
    * </pre>
    *
    * Protobuf type {@code EnterSceneDoneReq}
@@ -278,7 +278,7 @@ public final class EnterSceneDoneReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26367
+     * CmdId: 117
      * </pre>
      *
      * Protobuf type {@code EnterSceneDoneReq}

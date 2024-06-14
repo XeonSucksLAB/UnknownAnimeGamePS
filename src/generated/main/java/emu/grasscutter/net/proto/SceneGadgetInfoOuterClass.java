@@ -405,28 +405,16 @@ public final class SceneGadgetInfoOuterClass {
     emu.grasscutter.net.proto.CoinCollectOperatorInfoOuterClass.CoinCollectOperatorInfoOrBuilder getCoinCollectOperatorInfoOrBuilder();
 
     /**
-     * <pre>
-     * Item trifle_item = 67;
-     * </pre>
-     *
      * <code>.TrifleGadget trifle_gadget = 67;</code>
      * @return Whether the trifleGadget field is set.
      */
     boolean hasTrifleGadget();
     /**
-     * <pre>
-     * Item trifle_item = 67;
-     * </pre>
-     *
      * <code>.TrifleGadget trifle_gadget = 67;</code>
      * @return The trifleGadget.
      */
     emu.grasscutter.net.proto.TrifleGadgetOuterClass.TrifleGadget getTrifleGadget();
     /**
-     * <pre>
-     * Item trifle_item = 67;
-     * </pre>
-     *
      * <code>.TrifleGadget trifle_gadget = 67;</code>
      */
     emu.grasscutter.net.proto.TrifleGadgetOuterClass.TrifleGadgetOrBuilder getTrifleGadgetOrBuilder();
@@ -1993,10 +1981,6 @@ public final class SceneGadgetInfoOuterClass {
 
     public static final int TRIFLE_GADGET_FIELD_NUMBER = 67;
     /**
-     * <pre>
-     * Item trifle_item = 67;
-     * </pre>
-     *
      * <code>.TrifleGadget trifle_gadget = 67;</code>
      * @return Whether the trifleGadget field is set.
      */
@@ -2005,10 +1989,6 @@ public final class SceneGadgetInfoOuterClass {
       return contentCase_ == 67;
     }
     /**
-     * <pre>
-     * Item trifle_item = 67;
-     * </pre>
-     *
      * <code>.TrifleGadget trifle_gadget = 67;</code>
      * @return The trifleGadget.
      */
@@ -2020,10 +2000,6 @@ public final class SceneGadgetInfoOuterClass {
       return emu.grasscutter.net.proto.TrifleGadgetOuterClass.TrifleGadget.getDefaultInstance();
     }
     /**
-     * <pre>
-     * Item trifle_item = 67;
-     * </pre>
-     *
      * <code>.TrifleGadget trifle_gadget = 67;</code>
      */
     @java.lang.Override
@@ -6962,10 +6938,6 @@ public final class SceneGadgetInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TrifleGadgetOuterClass.TrifleGadget, emu.grasscutter.net.proto.TrifleGadgetOuterClass.TrifleGadget.Builder, emu.grasscutter.net.proto.TrifleGadgetOuterClass.TrifleGadgetOrBuilder> trifleGadgetBuilder_;
       /**
-       * <pre>
-       * Item trifle_item = 67;
-       * </pre>
-       *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
        * @return Whether the trifleGadget field is set.
        */
@@ -6974,10 +6946,6 @@ public final class SceneGadgetInfoOuterClass {
         return contentCase_ == 67;
       }
       /**
-       * <pre>
-       * Item trifle_item = 67;
-       * </pre>
-       *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
        * @return The trifleGadget.
        */
@@ -6996,10 +6964,6 @@ public final class SceneGadgetInfoOuterClass {
         }
       }
       /**
-       * <pre>
-       * Item trifle_item = 67;
-       * </pre>
-       *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
        */
       public Builder setTrifleGadget(emu.grasscutter.net.proto.TrifleGadgetOuterClass.TrifleGadget value) {
@@ -7016,10 +6980,6 @@ public final class SceneGadgetInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * Item trifle_item = 67;
-       * </pre>
-       *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
        */
       public Builder setTrifleGadget(
@@ -7034,10 +6994,6 @@ public final class SceneGadgetInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * Item trifle_item = 67;
-       * </pre>
-       *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
        */
       public Builder mergeTrifleGadget(emu.grasscutter.net.proto.TrifleGadgetOuterClass.TrifleGadget value) {
@@ -7060,10 +7016,6 @@ public final class SceneGadgetInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * Item trifle_item = 67;
-       * </pre>
-       *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
        */
       public Builder clearTrifleGadget() {
@@ -7083,20 +7035,12 @@ public final class SceneGadgetInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * Item trifle_item = 67;
-       * </pre>
-       *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
        */
       public emu.grasscutter.net.proto.TrifleGadgetOuterClass.TrifleGadget.Builder getTrifleGadgetBuilder() {
         return getTrifleGadgetFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       * Item trifle_item = 67;
-       * </pre>
-       *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
        */
       @java.lang.Override
@@ -7111,10 +7055,6 @@ public final class SceneGadgetInfoOuterClass {
         }
       }
       /**
-       * <pre>
-       * Item trifle_item = 67;
-       * </pre>
-       *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<

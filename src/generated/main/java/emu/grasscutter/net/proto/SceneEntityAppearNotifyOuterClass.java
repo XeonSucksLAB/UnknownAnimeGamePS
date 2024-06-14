@@ -54,11 +54,7 @@ public final class SceneEntityAppearNotifyOuterClass {
     emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType getAppearType();
 
     /**
-     * <pre>
-     * random
-     * </pre>
-     *
-     * <code>uint32 param = 15;</code>
+     * <code>uint32 param = 9;</code>
      * @return The param.
      */
     int getParam();
@@ -115,6 +111,11 @@ public final class SceneEntityAppearNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 72: {
+
+              param_ = input.readUInt32();
+              break;
+            }
             case 80: {
               int rawValue = input.readEnum();
 
@@ -128,11 +129,6 @@ public final class SceneEntityAppearNotifyOuterClass {
               }
               entityList_.add(
                   input.readMessage(emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 120: {
-
-              param_ = input.readUInt32();
               break;
             }
             default: {
@@ -229,14 +225,10 @@ public final class SceneEntityAppearNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType.UNRECOGNIZED : result;
     }
 
-    public static final int PARAM_FIELD_NUMBER = 15;
+    public static final int PARAM_FIELD_NUMBER = 9;
     private int param_;
     /**
-     * <pre>
-     * random
-     * </pre>
-     *
-     * <code>uint32 param = 15;</code>
+     * <code>uint32 param = 9;</code>
      * @return The param.
      */
     @java.lang.Override
@@ -258,14 +250,14 @@ public final class SceneEntityAppearNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (param_ != 0) {
+        output.writeUInt32(9, param_);
+      }
       if (appearType_ != emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType.VISION_TYPE_NONE.getNumber()) {
         output.writeEnum(10, appearType_);
       }
       for (int i = 0; i < entityList_.size(); i++) {
         output.writeMessage(13, entityList_.get(i));
-      }
-      if (param_ != 0) {
-        output.writeUInt32(15, param_);
       }
       unknownFields.writeTo(output);
     }
@@ -276,6 +268,10 @@ public final class SceneEntityAppearNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (param_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, param_);
+      }
       if (appearType_ != emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType.VISION_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(10, appearType_);
@@ -283,10 +279,6 @@ public final class SceneEntityAppearNotifyOuterClass {
       for (int i = 0; i < entityList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(13, entityList_.get(i));
-      }
-      if (param_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, param_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -919,11 +911,7 @@ public final class SceneEntityAppearNotifyOuterClass {
 
       private int param_ ;
       /**
-       * <pre>
-       * random
-       * </pre>
-       *
-       * <code>uint32 param = 15;</code>
+       * <code>uint32 param = 9;</code>
        * @return The param.
        */
       @java.lang.Override
@@ -931,11 +919,7 @@ public final class SceneEntityAppearNotifyOuterClass {
         return param_;
       }
       /**
-       * <pre>
-       * random
-       * </pre>
-       *
-       * <code>uint32 param = 15;</code>
+       * <code>uint32 param = 9;</code>
        * @param value The param to set.
        * @return This builder for chaining.
        */
@@ -946,11 +930,7 @@ public final class SceneEntityAppearNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * random
-       * </pre>
-       *
-       * <code>uint32 param = 15;</code>
+       * <code>uint32 param = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearParam() {
@@ -1030,7 +1010,7 @@ public final class SceneEntityAppearNotifyOuterClass {
       "tityInfo.proto\032\020VisionType.proto\"q\n\027Scen" +
       "eEntityAppearNotify\022%\n\013entity_list\030\r \003(\013" +
       "2\020.SceneEntityInfo\022 \n\013appear_type\030\n \001(\0162" +
-      "\013.VisionType\022\r\n\005param\030\017 \001(\rB\033\n\031emu.grass" +
+      "\013.VisionType\022\r\n\005param\030\t \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -159,10 +159,6 @@ public final class BreakoutActionOuterClass {
     long getFCCNGNCIFAI();
   }
   /**
-   * <pre>
-   * Obf: JBHHKOPAEFB
-   * </pre>
-   *
    * Protobuf type {@code BreakoutAction}
    */
   public static final class BreakoutAction extends
@@ -356,10 +352,6 @@ public final class BreakoutActionOuterClass {
     }
 
     /**
-     * <pre>
-     * Obf: BGLHJHMLHAI
-     * </pre>
-     *
      * Protobuf enum {@code BreakoutAction.BreakoutActionType}
      */
     public enum BreakoutActionType
@@ -1107,10 +1099,6 @@ public final class BreakoutActionOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: JBHHKOPAEFB
-     * </pre>
-     *
      * Protobuf type {@code BreakoutAction}
      */
     public static final class Builder extends

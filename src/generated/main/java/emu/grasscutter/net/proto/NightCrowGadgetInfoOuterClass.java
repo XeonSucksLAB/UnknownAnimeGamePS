@@ -36,10 +36,6 @@ public final class NightCrowGadgetInfoOuterClass {
     int getArgumentList(int index);
   }
   /**
-   * <pre>
-   * Obf: OHIBCIDJNDB
-   * </pre>
-   *
    * Protobuf type {@code NightCrowGadgetInfo}
    */
   public static final class NightCrowGadgetInfo extends
@@ -343,10 +339,6 @@ public final class NightCrowGadgetInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OHIBCIDJNDB
-     * </pre>
-     *
      * Protobuf type {@code NightCrowGadgetInfo}
      */
     public static final class Builder extends

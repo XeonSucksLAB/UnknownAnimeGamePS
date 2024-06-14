@@ -117,10 +117,6 @@ public final class RoutePointOuterClass {
     public emu.grasscutter.net.proto.RoutePointOuterClass.RoutePoint.RotateParamsCase getRotateParamsCase();
   }
   /**
-   * <pre>
-   * Obf: EDGGMGMHPJB
-   * </pre>
-   *
    * Protobuf type {@code RoutePoint}
    */
   public static final class RoutePoint extends
@@ -826,10 +822,6 @@ public final class RoutePointOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: EDGGMGMHPJB
-     * </pre>
-     *
      * Protobuf type {@code RoutePoint}
      */
     public static final class Builder extends

@@ -19,63 +19,63 @@ public final class ObstacleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.MathQuaternion rotation = 7;</code>
+     * <code>.MathQuaternion rotation = 12;</code>
      * @return Whether the rotation field is set.
      */
     boolean hasRotation();
     /**
-     * <code>.MathQuaternion rotation = 7;</code>
+     * <code>.MathQuaternion rotation = 12;</code>
      * @return The rotation.
      */
     emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getRotation();
     /**
-     * <code>.MathQuaternion rotation = 7;</code>
+     * <code>.MathQuaternion rotation = 12;</code>
      */
     emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getRotationOrBuilder();
 
     /**
-     * <code>.Vector3Int extents = 5;</code>
+     * <code>.Vector3Int extents = 10;</code>
      * @return Whether the extents field is set.
      */
     boolean hasExtents();
     /**
-     * <code>.Vector3Int extents = 5;</code>
+     * <code>.Vector3Int extents = 10;</code>
      * @return The extents.
      */
     emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int getExtents();
     /**
-     * <code>.Vector3Int extents = 5;</code>
+     * <code>.Vector3Int extents = 10;</code>
      */
     emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3IntOrBuilder getExtentsOrBuilder();
 
     /**
-     * <code>.Vector center = 14;</code>
+     * <code>.Vector center = 6;</code>
      * @return Whether the center field is set.
      */
     boolean hasCenter();
     /**
-     * <code>.Vector center = 14;</code>
+     * <code>.Vector center = 6;</code>
      * @return The center.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter();
     /**
-     * <code>.Vector center = 14;</code>
+     * <code>.Vector center = 6;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder();
 
     /**
-     * <code>.ObstacleInfo.ShapeType shape = 3;</code>
+     * <code>.ObstacleInfo.ShapeType shape = 7;</code>
      * @return The enum numeric value on the wire for shape.
      */
     int getShapeValue();
     /**
-     * <code>.ObstacleInfo.ShapeType shape = 3;</code>
+     * <code>.ObstacleInfo.ShapeType shape = 7;</code>
      * @return The shape.
      */
     emu.grasscutter.net.proto.ObstacleInfoOuterClass.ObstacleInfo.ShapeType getShape();
 
     /**
-     * <code>int32 obstacle_id = 8;</code>
+     * <code>int32 obstacle_id = 11;</code>
      * @return The obstacleId.
      */
     int getObstacleId();
@@ -126,13 +126,26 @@ public final class ObstacleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 50: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (center_ != null) {
+                subBuilder = center_.toBuilder();
+              }
+              center_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(center_);
+                center_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 56: {
               int rawValue = input.readEnum();
 
               shape_ = rawValue;
               break;
             }
-            case 42: {
+            case 82: {
               emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int.Builder subBuilder = null;
               if (extents_ != null) {
                 subBuilder = extents_.toBuilder();
@@ -145,7 +158,12 @@ public final class ObstacleInfoOuterClass {
 
               break;
             }
-            case 58: {
+            case 88: {
+
+              obstacleId_ = input.readInt32();
+              break;
+            }
+            case 98: {
               emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder subBuilder = null;
               if (rotation_ != null) {
                 subBuilder = rotation_.toBuilder();
@@ -154,24 +172,6 @@ public final class ObstacleInfoOuterClass {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(rotation_);
                 rotation_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 64: {
-
-              obstacleId_ = input.readInt32();
-              break;
-            }
-            case 114: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (center_ != null) {
-                subBuilder = center_.toBuilder();
-              }
-              center_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(center_);
-                center_ = subBuilder.buildPartial();
               }
 
               break;
@@ -316,10 +316,10 @@ public final class ObstacleInfoOuterClass {
       // @@protoc_insertion_point(enum_scope:ObstacleInfo.ShapeType)
     }
 
-    public static final int ROTATION_FIELD_NUMBER = 7;
+    public static final int ROTATION_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion rotation_;
     /**
-     * <code>.MathQuaternion rotation = 7;</code>
+     * <code>.MathQuaternion rotation = 12;</code>
      * @return Whether the rotation field is set.
      */
     @java.lang.Override
@@ -327,7 +327,7 @@ public final class ObstacleInfoOuterClass {
       return rotation_ != null;
     }
     /**
-     * <code>.MathQuaternion rotation = 7;</code>
+     * <code>.MathQuaternion rotation = 12;</code>
      * @return The rotation.
      */
     @java.lang.Override
@@ -335,17 +335,17 @@ public final class ObstacleInfoOuterClass {
       return rotation_ == null ? emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : rotation_;
     }
     /**
-     * <code>.MathQuaternion rotation = 7;</code>
+     * <code>.MathQuaternion rotation = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getRotationOrBuilder() {
       return getRotation();
     }
 
-    public static final int EXTENTS_FIELD_NUMBER = 5;
+    public static final int EXTENTS_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int extents_;
     /**
-     * <code>.Vector3Int extents = 5;</code>
+     * <code>.Vector3Int extents = 10;</code>
      * @return Whether the extents field is set.
      */
     @java.lang.Override
@@ -353,7 +353,7 @@ public final class ObstacleInfoOuterClass {
       return extents_ != null;
     }
     /**
-     * <code>.Vector3Int extents = 5;</code>
+     * <code>.Vector3Int extents = 10;</code>
      * @return The extents.
      */
     @java.lang.Override
@@ -361,17 +361,17 @@ public final class ObstacleInfoOuterClass {
       return extents_ == null ? emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int.getDefaultInstance() : extents_;
     }
     /**
-     * <code>.Vector3Int extents = 5;</code>
+     * <code>.Vector3Int extents = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3IntOrBuilder getExtentsOrBuilder() {
       return getExtents();
     }
 
-    public static final int CENTER_FIELD_NUMBER = 14;
+    public static final int CENTER_FIELD_NUMBER = 6;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
     /**
-     * <code>.Vector center = 14;</code>
+     * <code>.Vector center = 6;</code>
      * @return Whether the center field is set.
      */
     @java.lang.Override
@@ -379,7 +379,7 @@ public final class ObstacleInfoOuterClass {
       return center_ != null;
     }
     /**
-     * <code>.Vector center = 14;</code>
+     * <code>.Vector center = 6;</code>
      * @return The center.
      */
     @java.lang.Override
@@ -387,24 +387,24 @@ public final class ObstacleInfoOuterClass {
       return center_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
     }
     /**
-     * <code>.Vector center = 14;</code>
+     * <code>.Vector center = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
       return getCenter();
     }
 
-    public static final int SHAPE_FIELD_NUMBER = 3;
+    public static final int SHAPE_FIELD_NUMBER = 7;
     private int shape_;
     /**
-     * <code>.ObstacleInfo.ShapeType shape = 3;</code>
+     * <code>.ObstacleInfo.ShapeType shape = 7;</code>
      * @return The enum numeric value on the wire for shape.
      */
     @java.lang.Override public int getShapeValue() {
       return shape_;
     }
     /**
-     * <code>.ObstacleInfo.ShapeType shape = 3;</code>
+     * <code>.ObstacleInfo.ShapeType shape = 7;</code>
      * @return The shape.
      */
     @java.lang.Override public emu.grasscutter.net.proto.ObstacleInfoOuterClass.ObstacleInfo.ShapeType getShape() {
@@ -413,10 +413,10 @@ public final class ObstacleInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.ObstacleInfoOuterClass.ObstacleInfo.ShapeType.UNRECOGNIZED : result;
     }
 
-    public static final int OBSTACLE_ID_FIELD_NUMBER = 8;
+    public static final int OBSTACLE_ID_FIELD_NUMBER = 11;
     private int obstacleId_;
     /**
-     * <code>int32 obstacle_id = 8;</code>
+     * <code>int32 obstacle_id = 11;</code>
      * @return The obstacleId.
      */
     @java.lang.Override
@@ -438,20 +438,20 @@ public final class ObstacleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (center_ != null) {
+        output.writeMessage(6, getCenter());
+      }
       if (shape_ != emu.grasscutter.net.proto.ObstacleInfoOuterClass.ObstacleInfo.ShapeType.OBSTACLE_SHAPE_CAPSULE.getNumber()) {
-        output.writeEnum(3, shape_);
+        output.writeEnum(7, shape_);
       }
       if (extents_ != null) {
-        output.writeMessage(5, getExtents());
-      }
-      if (rotation_ != null) {
-        output.writeMessage(7, getRotation());
+        output.writeMessage(10, getExtents());
       }
       if (obstacleId_ != 0) {
-        output.writeInt32(8, obstacleId_);
+        output.writeInt32(11, obstacleId_);
       }
-      if (center_ != null) {
-        output.writeMessage(14, getCenter());
+      if (rotation_ != null) {
+        output.writeMessage(12, getRotation());
       }
       unknownFields.writeTo(output);
     }
@@ -462,25 +462,25 @@ public final class ObstacleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (center_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, getCenter());
+      }
       if (shape_ != emu.grasscutter.net.proto.ObstacleInfoOuterClass.ObstacleInfo.ShapeType.OBSTACLE_SHAPE_CAPSULE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, shape_);
+          .computeEnumSize(7, shape_);
       }
       if (extents_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getExtents());
-      }
-      if (rotation_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getRotation());
+          .computeMessageSize(10, getExtents());
       }
       if (obstacleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, obstacleId_);
+          .computeInt32Size(11, obstacleId_);
       }
-      if (center_ != null) {
+      if (rotation_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getCenter());
+          .computeMessageSize(12, getRotation());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -836,14 +836,14 @@ public final class ObstacleInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> rotationBuilder_;
       /**
-       * <code>.MathQuaternion rotation = 7;</code>
+       * <code>.MathQuaternion rotation = 12;</code>
        * @return Whether the rotation field is set.
        */
       public boolean hasRotation() {
         return rotationBuilder_ != null || rotation_ != null;
       }
       /**
-       * <code>.MathQuaternion rotation = 7;</code>
+       * <code>.MathQuaternion rotation = 12;</code>
        * @return The rotation.
        */
       public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getRotation() {
@@ -854,7 +854,7 @@ public final class ObstacleInfoOuterClass {
         }
       }
       /**
-       * <code>.MathQuaternion rotation = 7;</code>
+       * <code>.MathQuaternion rotation = 12;</code>
        */
       public Builder setRotation(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
         if (rotationBuilder_ == null) {
@@ -870,7 +870,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion rotation = 7;</code>
+       * <code>.MathQuaternion rotation = 12;</code>
        */
       public Builder setRotation(
           emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder builderForValue) {
@@ -884,7 +884,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion rotation = 7;</code>
+       * <code>.MathQuaternion rotation = 12;</code>
        */
       public Builder mergeRotation(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
         if (rotationBuilder_ == null) {
@@ -902,7 +902,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion rotation = 7;</code>
+       * <code>.MathQuaternion rotation = 12;</code>
        */
       public Builder clearRotation() {
         if (rotationBuilder_ == null) {
@@ -916,7 +916,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion rotation = 7;</code>
+       * <code>.MathQuaternion rotation = 12;</code>
        */
       public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder getRotationBuilder() {
         
@@ -924,7 +924,7 @@ public final class ObstacleInfoOuterClass {
         return getRotationFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MathQuaternion rotation = 7;</code>
+       * <code>.MathQuaternion rotation = 12;</code>
        */
       public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getRotationOrBuilder() {
         if (rotationBuilder_ != null) {
@@ -935,7 +935,7 @@ public final class ObstacleInfoOuterClass {
         }
       }
       /**
-       * <code>.MathQuaternion rotation = 7;</code>
+       * <code>.MathQuaternion rotation = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> 
@@ -955,14 +955,14 @@ public final class ObstacleInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int, emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int.Builder, emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3IntOrBuilder> extentsBuilder_;
       /**
-       * <code>.Vector3Int extents = 5;</code>
+       * <code>.Vector3Int extents = 10;</code>
        * @return Whether the extents field is set.
        */
       public boolean hasExtents() {
         return extentsBuilder_ != null || extents_ != null;
       }
       /**
-       * <code>.Vector3Int extents = 5;</code>
+       * <code>.Vector3Int extents = 10;</code>
        * @return The extents.
        */
       public emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int getExtents() {
@@ -973,7 +973,7 @@ public final class ObstacleInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector3Int extents = 5;</code>
+       * <code>.Vector3Int extents = 10;</code>
        */
       public Builder setExtents(emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int value) {
         if (extentsBuilder_ == null) {
@@ -989,7 +989,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector3Int extents = 5;</code>
+       * <code>.Vector3Int extents = 10;</code>
        */
       public Builder setExtents(
           emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int.Builder builderForValue) {
@@ -1003,7 +1003,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector3Int extents = 5;</code>
+       * <code>.Vector3Int extents = 10;</code>
        */
       public Builder mergeExtents(emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int value) {
         if (extentsBuilder_ == null) {
@@ -1021,7 +1021,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector3Int extents = 5;</code>
+       * <code>.Vector3Int extents = 10;</code>
        */
       public Builder clearExtents() {
         if (extentsBuilder_ == null) {
@@ -1035,7 +1035,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector3Int extents = 5;</code>
+       * <code>.Vector3Int extents = 10;</code>
        */
       public emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int.Builder getExtentsBuilder() {
         
@@ -1043,7 +1043,7 @@ public final class ObstacleInfoOuterClass {
         return getExtentsFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector3Int extents = 5;</code>
+       * <code>.Vector3Int extents = 10;</code>
        */
       public emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3IntOrBuilder getExtentsOrBuilder() {
         if (extentsBuilder_ != null) {
@@ -1054,7 +1054,7 @@ public final class ObstacleInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector3Int extents = 5;</code>
+       * <code>.Vector3Int extents = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int, emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int.Builder, emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3IntOrBuilder> 
@@ -1074,14 +1074,14 @@ public final class ObstacleInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> centerBuilder_;
       /**
-       * <code>.Vector center = 14;</code>
+       * <code>.Vector center = 6;</code>
        * @return Whether the center field is set.
        */
       public boolean hasCenter() {
         return centerBuilder_ != null || center_ != null;
       }
       /**
-       * <code>.Vector center = 14;</code>
+       * <code>.Vector center = 6;</code>
        * @return The center.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter() {
@@ -1092,7 +1092,7 @@ public final class ObstacleInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector center = 14;</code>
+       * <code>.Vector center = 6;</code>
        */
       public Builder setCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (centerBuilder_ == null) {
@@ -1108,7 +1108,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector center = 14;</code>
+       * <code>.Vector center = 6;</code>
        */
       public Builder setCenter(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -1122,7 +1122,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector center = 14;</code>
+       * <code>.Vector center = 6;</code>
        */
       public Builder mergeCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (centerBuilder_ == null) {
@@ -1140,7 +1140,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector center = 14;</code>
+       * <code>.Vector center = 6;</code>
        */
       public Builder clearCenter() {
         if (centerBuilder_ == null) {
@@ -1154,7 +1154,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector center = 14;</code>
+       * <code>.Vector center = 6;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCenterBuilder() {
         
@@ -1162,7 +1162,7 @@ public final class ObstacleInfoOuterClass {
         return getCenterFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector center = 14;</code>
+       * <code>.Vector center = 6;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
         if (centerBuilder_ != null) {
@@ -1173,7 +1173,7 @@ public final class ObstacleInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector center = 14;</code>
+       * <code>.Vector center = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -1191,14 +1191,14 @@ public final class ObstacleInfoOuterClass {
 
       private int shape_ = 0;
       /**
-       * <code>.ObstacleInfo.ShapeType shape = 3;</code>
+       * <code>.ObstacleInfo.ShapeType shape = 7;</code>
        * @return The enum numeric value on the wire for shape.
        */
       @java.lang.Override public int getShapeValue() {
         return shape_;
       }
       /**
-       * <code>.ObstacleInfo.ShapeType shape = 3;</code>
+       * <code>.ObstacleInfo.ShapeType shape = 7;</code>
        * @param value The enum numeric value on the wire for shape to set.
        * @return This builder for chaining.
        */
@@ -1209,7 +1209,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ObstacleInfo.ShapeType shape = 3;</code>
+       * <code>.ObstacleInfo.ShapeType shape = 7;</code>
        * @return The shape.
        */
       @java.lang.Override
@@ -1219,7 +1219,7 @@ public final class ObstacleInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.ObstacleInfoOuterClass.ObstacleInfo.ShapeType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.ObstacleInfo.ShapeType shape = 3;</code>
+       * <code>.ObstacleInfo.ShapeType shape = 7;</code>
        * @param value The shape to set.
        * @return This builder for chaining.
        */
@@ -1233,7 +1233,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ObstacleInfo.ShapeType shape = 3;</code>
+       * <code>.ObstacleInfo.ShapeType shape = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearShape() {
@@ -1245,7 +1245,7 @@ public final class ObstacleInfoOuterClass {
 
       private int obstacleId_ ;
       /**
-       * <code>int32 obstacle_id = 8;</code>
+       * <code>int32 obstacle_id = 11;</code>
        * @return The obstacleId.
        */
       @java.lang.Override
@@ -1253,7 +1253,7 @@ public final class ObstacleInfoOuterClass {
         return obstacleId_;
       }
       /**
-       * <code>int32 obstacle_id = 8;</code>
+       * <code>int32 obstacle_id = 11;</code>
        * @param value The obstacleId to set.
        * @return This builder for chaining.
        */
@@ -1264,7 +1264,7 @@ public final class ObstacleInfoOuterClass {
         return this;
       }
       /**
-       * <code>int32 obstacle_id = 8;</code>
+       * <code>int32 obstacle_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearObstacleId() {
@@ -1342,10 +1342,10 @@ public final class ObstacleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\022ObstacleInfo.proto\032\024MathQuaternion.pro" +
       "to\032\020Vector3Int.proto\032\014Vector.proto\"\346\001\n\014O" +
-      "bstacleInfo\022!\n\010rotation\030\007 \001(\0132\017.MathQuat" +
-      "ernion\022\034\n\007extents\030\005 \001(\0132\013.Vector3Int\022\027\n\006" +
-      "center\030\016 \001(\0132\007.Vector\022&\n\005shape\030\003 \001(\0162\027.O" +
-      "bstacleInfo.ShapeType\022\023\n\013obstacle_id\030\010 \001" +
+      "bstacleInfo\022!\n\010rotation\030\014 \001(\0132\017.MathQuat" +
+      "ernion\022\034\n\007extents\030\n \001(\0132\013.Vector3Int\022\027\n\006" +
+      "center\030\006 \001(\0132\007.Vector\022&\n\005shape\030\007 \001(\0162\027.O" +
+      "bstacleInfo.ShapeType\022\023\n\013obstacle_id\030\013 \001" +
       "(\005\"?\n\tShapeType\022\032\n\026OBSTACLE_SHAPE_CAPSUL" +
       "E\020\000\022\026\n\022OBSTACLE_SHAPE_BOX\020\001B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"

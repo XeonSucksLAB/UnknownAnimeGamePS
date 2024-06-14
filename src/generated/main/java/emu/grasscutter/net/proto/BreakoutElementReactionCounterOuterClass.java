@@ -31,10 +31,6 @@ public final class BreakoutElementReactionCounterOuterClass {
     int getCount();
   }
   /**
-   * <pre>
-   * Obf: KGJJJGIPNLE
-   * </pre>
-   *
    * Protobuf type {@code BreakoutElementReactionCounter}
    */
   public static final class BreakoutElementReactionCounter extends
@@ -310,10 +306,6 @@ public final class BreakoutElementReactionCounterOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: KGJJJGIPNLE
-     * </pre>
-     *
      * Protobuf type {@code BreakoutElementReactionCounter}
      */
     public static final class Builder extends

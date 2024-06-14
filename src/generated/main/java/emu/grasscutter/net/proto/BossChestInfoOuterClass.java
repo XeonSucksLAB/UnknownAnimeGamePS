@@ -99,10 +99,6 @@ public final class BossChestInfoOuterClass {
         int key);
   }
   /**
-   * <pre>
-   * Obf: CBKAOHFJIND
-   * </pre>
-   *
    * Protobuf type {@code BossChestInfo}
    */
   public static final class BossChestInfo extends
@@ -668,10 +664,6 @@ public final class BossChestInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: CBKAOHFJIND
-     * </pre>
-     *
      * Protobuf type {@code BossChestInfo}
      */
     public static final class Builder extends

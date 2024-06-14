@@ -80,10 +80,6 @@ public final class GadgetGeneralRewardInfoOuterClass {
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamOrBuilder();
   }
   /**
-   * <pre>
-   * Obf: AHGOAHBMENB
-   * </pre>
-   *
    * Protobuf type {@code GadgetGeneralRewardInfo}
    */
   public static final class GadgetGeneralRewardInfo extends
@@ -576,10 +572,6 @@ public final class GadgetGeneralRewardInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: AHGOAHBMENB
-     * </pre>
-     *
      * Protobuf type {@code GadgetGeneralRewardInfo}
      */
     public static final class Builder extends

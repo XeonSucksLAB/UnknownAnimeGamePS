@@ -40,10 +40,6 @@ public final class TrifleGadgetOuterClass {
     int getGAHBDCCFPGJ();
   }
   /**
-   * <pre>
-   * Obf: LEEAOCFCGJA
-   * </pre>
-   *
    * Protobuf type {@code TrifleGadget}
    */
   public static final class TrifleGadget extends
@@ -347,10 +343,6 @@ public final class TrifleGadgetOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: LEEAOCFCGJA
-     * </pre>
-     *
      * Protobuf type {@code TrifleGadget}
      */
     public static final class Builder extends

@@ -41,7 +41,7 @@ public final class GetPlayerSocialDetailRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 
+   * CmdId: 1804
    * </pre>
    *
    * Protobuf type {@code GetPlayerSocialDetailRsp}
@@ -348,7 +348,7 @@ public final class GetPlayerSocialDetailRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 
+     * CmdId: 1804
      * </pre>
      *
      * Protobuf type {@code GetPlayerSocialDetailRsp}

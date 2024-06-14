@@ -31,10 +31,6 @@ public final class ScreenInfoOuterClass {
     int getProjectorEntityId();
   }
   /**
-   * <pre>
-   * Obf: MPEEPHMCGKD
-   * </pre>
-   *
    * Protobuf type {@code ScreenInfo}
    */
   public static final class ScreenInfo extends
@@ -310,10 +306,6 @@ public final class ScreenInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: MPEEPHMCGKD
-     * </pre>
-     *
      * Protobuf type {@code ScreenInfo}
      */
     public static final class Builder extends

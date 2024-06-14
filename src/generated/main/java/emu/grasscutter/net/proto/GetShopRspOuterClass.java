@@ -34,7 +34,7 @@ public final class GetShopRspOuterClass {
     emu.grasscutter.net.proto.ShopOuterClass.ShopOrBuilder getShopOrBuilder();
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -101,7 +101,7 @@ public final class GetShopRspOuterClass {
 
               break;
             }
-            case 120: {
+            case 112: {
 
               retcode_ = input.readInt32();
               break;
@@ -164,10 +164,10 @@ public final class GetShopRspOuterClass {
       return getShop();
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -193,7 +193,7 @@ public final class GetShopRspOuterClass {
         output.writeMessage(11, getShop());
       }
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -210,7 +210,7 @@ public final class GetShopRspOuterClass {
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -632,7 +632,7 @@ public final class GetShopRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 14;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -640,7 +640,7 @@ public final class GetShopRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 14;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -651,7 +651,7 @@ public final class GetShopRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -728,7 +728,7 @@ public final class GetShopRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020GetShopRsp.proto\032\nShop.proto\"2\n\nGetSho" +
-      "pRsp\022\023\n\004shop\030\013 \001(\0132\005.Shop\022\017\n\007retcode\030\017 \001" +
+      "pRsp\022\023\n\004shop\030\013 \001(\0132\005.Shop\022\017\n\007retcode\030\016 \001" +
       "(\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

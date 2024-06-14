@@ -153,10 +153,6 @@ public final class PlatformInfoOuterClass {
     int getPointId();
   }
   /**
-   * <pre>
-   * Obf: NEACNMDIMDL
-   * </pre>
-   *
    * Protobuf type {@code PlatformInfo}
    */
   public static final class PlatformInfo extends
@@ -907,10 +903,6 @@ public final class PlatformInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NEACNMDIMDL
-     * </pre>
-     *
      * Protobuf type {@code PlatformInfo}
      */
     public static final class Builder extends

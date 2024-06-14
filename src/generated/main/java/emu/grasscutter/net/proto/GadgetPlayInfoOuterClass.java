@@ -81,10 +81,6 @@ public final class GadgetPlayInfoOuterClass {
     emu.grasscutter.net.proto.GadgetCrucibleInfoOuterClass.GadgetCrucibleInfoOrBuilder getCrucibleInfoOrBuilder();
   }
   /**
-   * <pre>
-   * Obf: LJJODNPIMAI
-   * </pre>
-   *
    * Protobuf type {@code GadgetPlayInfo}
    */
   public static final class GadgetPlayInfo extends
@@ -579,10 +575,6 @@ public final class GadgetPlayInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: LJJODNPIMAI
-     * </pre>
-     *
      * Protobuf type {@code GadgetPlayInfo}
      */
     public static final class Builder extends

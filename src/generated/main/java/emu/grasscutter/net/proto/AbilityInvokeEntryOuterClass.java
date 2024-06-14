@@ -25,33 +25,33 @@ public final class AbilityInvokeEntryOuterClass {
     int getEntityId();
 
     /**
-     * <code>.AbilityInvokeEntryHead head = 12;</code>
+     * <code>.AbilityInvokeEntryHead head = 10;</code>
      * @return Whether the head field is set.
      */
     boolean hasHead();
     /**
-     * <code>.AbilityInvokeEntryHead head = 12;</code>
+     * <code>.AbilityInvokeEntryHead head = 10;</code>
      * @return The head.
      */
     emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead getHead();
     /**
-     * <code>.AbilityInvokeEntryHead head = 12;</code>
+     * <code>.AbilityInvokeEntryHead head = 10;</code>
      */
     emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHeadOrBuilder getHeadOrBuilder();
 
     /**
-     * <code>bytes ability_data = 15;</code>
+     * <code>bytes ability_data = 12;</code>
      * @return The abilityData.
      */
     com.google.protobuf.ByteString getAbilityData();
 
     /**
-     * <code>.AbilityInvokeArgument argument_type = 10;</code>
+     * <code>.AbilityInvokeArgument argument_type = 15;</code>
      * @return The enum numeric value on the wire for argumentType.
      */
     int getArgumentTypeValue();
     /**
-     * <code>.AbilityInvokeArgument argument_type = 10;</code>
+     * <code>.AbilityInvokeArgument argument_type = 15;</code>
      * @return The argumentType.
      */
     emu.grasscutter.net.proto.AbilityInvokeArgumentOuterClass.AbilityInvokeArgument getArgumentType();
@@ -68,25 +68,25 @@ public final class AbilityInvokeEntryOuterClass {
     emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType();
 
     /**
-     * <code>uint32 forward_peer = 14;</code>
+     * <code>uint32 forward_peer = 2;</code>
      * @return The forwardPeer.
      */
     int getForwardPeer();
 
     /**
-     * <code>uint32 event_id = 2;</code>
+     * <code>uint32 event_id = 1;</code>
      * @return The eventId.
      */
     int getEventId();
 
     /**
-     * <code>bool is_ignore_auth = 6;</code>
+     * <code>bool is_ignore_auth = 4;</code>
      * @return The isIgnoreAuth.
      */
     boolean getIsIgnoreAuth();
 
     /**
-     * <code>double total_tick_time = 9;</code>
+     * <code>double total_tick_time = 7;</code>
      * @return The totalTickTime.
      */
     double getTotalTickTime();
@@ -139,33 +139,27 @@ public final class AbilityInvokeEntryOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
               eventId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 16: {
+
+              forwardPeer_ = input.readUInt32();
+              break;
+            }
+            case 32: {
 
               isIgnoreAuth_ = input.readBool();
               break;
             }
-            case 73: {
+            case 57: {
 
               totalTickTime_ = input.readDouble();
               break;
             }
-            case 80: {
-              int rawValue = input.readEnum();
-
-              argumentType_ = rawValue;
-              break;
-            }
-            case 88: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 98: {
+            case 82: {
               emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead.Builder subBuilder = null;
               if (head_ != null) {
                 subBuilder = head_.toBuilder();
@@ -178,20 +172,26 @@ public final class AbilityInvokeEntryOuterClass {
 
               break;
             }
+            case 88: {
+
+              entityId_ = input.readUInt32();
+              break;
+            }
+            case 98: {
+
+              abilityData_ = input.readBytes();
+              break;
+            }
             case 104: {
               int rawValue = input.readEnum();
 
               forwardType_ = rawValue;
               break;
             }
-            case 112: {
+            case 120: {
+              int rawValue = input.readEnum();
 
-              forwardPeer_ = input.readUInt32();
-              break;
-            }
-            case 122: {
-
-              abilityData_ = input.readBytes();
+              argumentType_ = rawValue;
               break;
             }
             default: {
@@ -237,10 +237,10 @@ public final class AbilityInvokeEntryOuterClass {
       return entityId_;
     }
 
-    public static final int HEAD_FIELD_NUMBER = 12;
+    public static final int HEAD_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead head_;
     /**
-     * <code>.AbilityInvokeEntryHead head = 12;</code>
+     * <code>.AbilityInvokeEntryHead head = 10;</code>
      * @return Whether the head field is set.
      */
     @java.lang.Override
@@ -248,7 +248,7 @@ public final class AbilityInvokeEntryOuterClass {
       return head_ != null;
     }
     /**
-     * <code>.AbilityInvokeEntryHead head = 12;</code>
+     * <code>.AbilityInvokeEntryHead head = 10;</code>
      * @return The head.
      */
     @java.lang.Override
@@ -256,17 +256,17 @@ public final class AbilityInvokeEntryOuterClass {
       return head_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead.getDefaultInstance() : head_;
     }
     /**
-     * <code>.AbilityInvokeEntryHead head = 12;</code>
+     * <code>.AbilityInvokeEntryHead head = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHeadOrBuilder getHeadOrBuilder() {
       return getHead();
     }
 
-    public static final int ABILITY_DATA_FIELD_NUMBER = 15;
+    public static final int ABILITY_DATA_FIELD_NUMBER = 12;
     private com.google.protobuf.ByteString abilityData_;
     /**
-     * <code>bytes ability_data = 15;</code>
+     * <code>bytes ability_data = 12;</code>
      * @return The abilityData.
      */
     @java.lang.Override
@@ -274,17 +274,17 @@ public final class AbilityInvokeEntryOuterClass {
       return abilityData_;
     }
 
-    public static final int ARGUMENT_TYPE_FIELD_NUMBER = 10;
+    public static final int ARGUMENT_TYPE_FIELD_NUMBER = 15;
     private int argumentType_;
     /**
-     * <code>.AbilityInvokeArgument argument_type = 10;</code>
+     * <code>.AbilityInvokeArgument argument_type = 15;</code>
      * @return The enum numeric value on the wire for argumentType.
      */
     @java.lang.Override public int getArgumentTypeValue() {
       return argumentType_;
     }
     /**
-     * <code>.AbilityInvokeArgument argument_type = 10;</code>
+     * <code>.AbilityInvokeArgument argument_type = 15;</code>
      * @return The argumentType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.AbilityInvokeArgumentOuterClass.AbilityInvokeArgument getArgumentType() {
@@ -312,10 +312,10 @@ public final class AbilityInvokeEntryOuterClass {
       return result == null ? emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.UNRECOGNIZED : result;
     }
 
-    public static final int FORWARD_PEER_FIELD_NUMBER = 14;
+    public static final int FORWARD_PEER_FIELD_NUMBER = 2;
     private int forwardPeer_;
     /**
-     * <code>uint32 forward_peer = 14;</code>
+     * <code>uint32 forward_peer = 2;</code>
      * @return The forwardPeer.
      */
     @java.lang.Override
@@ -323,10 +323,10 @@ public final class AbilityInvokeEntryOuterClass {
       return forwardPeer_;
     }
 
-    public static final int EVENT_ID_FIELD_NUMBER = 2;
+    public static final int EVENT_ID_FIELD_NUMBER = 1;
     private int eventId_;
     /**
-     * <code>uint32 event_id = 2;</code>
+     * <code>uint32 event_id = 1;</code>
      * @return The eventId.
      */
     @java.lang.Override
@@ -334,10 +334,10 @@ public final class AbilityInvokeEntryOuterClass {
       return eventId_;
     }
 
-    public static final int IS_IGNORE_AUTH_FIELD_NUMBER = 6;
+    public static final int IS_IGNORE_AUTH_FIELD_NUMBER = 4;
     private boolean isIgnoreAuth_;
     /**
-     * <code>bool is_ignore_auth = 6;</code>
+     * <code>bool is_ignore_auth = 4;</code>
      * @return The isIgnoreAuth.
      */
     @java.lang.Override
@@ -345,10 +345,10 @@ public final class AbilityInvokeEntryOuterClass {
       return isIgnoreAuth_;
     }
 
-    public static final int TOTAL_TICK_TIME_FIELD_NUMBER = 9;
+    public static final int TOTAL_TICK_TIME_FIELD_NUMBER = 7;
     private double totalTickTime_;
     /**
-     * <code>double total_tick_time = 9;</code>
+     * <code>double total_tick_time = 7;</code>
      * @return The totalTickTime.
      */
     @java.lang.Override
@@ -371,31 +371,31 @@ public final class AbilityInvokeEntryOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (eventId_ != 0) {
-        output.writeUInt32(2, eventId_);
+        output.writeUInt32(1, eventId_);
+      }
+      if (forwardPeer_ != 0) {
+        output.writeUInt32(2, forwardPeer_);
       }
       if (isIgnoreAuth_ != false) {
-        output.writeBool(6, isIgnoreAuth_);
+        output.writeBool(4, isIgnoreAuth_);
       }
       if (totalTickTime_ != 0D) {
-        output.writeDouble(9, totalTickTime_);
+        output.writeDouble(7, totalTickTime_);
       }
-      if (argumentType_ != emu.grasscutter.net.proto.AbilityInvokeArgumentOuterClass.AbilityInvokeArgument.ABILITY_INVOKE_ARGUMENT_NONE.getNumber()) {
-        output.writeEnum(10, argumentType_);
+      if (head_ != null) {
+        output.writeMessage(10, getHead());
       }
       if (entityId_ != 0) {
         output.writeUInt32(11, entityId_);
       }
-      if (head_ != null) {
-        output.writeMessage(12, getHead());
+      if (!abilityData_.isEmpty()) {
+        output.writeBytes(12, abilityData_);
       }
       if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
         output.writeEnum(13, forwardType_);
       }
-      if (forwardPeer_ != 0) {
-        output.writeUInt32(14, forwardPeer_);
-      }
-      if (!abilityData_.isEmpty()) {
-        output.writeBytes(15, abilityData_);
+      if (argumentType_ != emu.grasscutter.net.proto.AbilityInvokeArgumentOuterClass.AbilityInvokeArgument.ABILITY_INVOKE_ARGUMENT_NONE.getNumber()) {
+        output.writeEnum(15, argumentType_);
       }
       unknownFields.writeTo(output);
     }
@@ -408,39 +408,39 @@ public final class AbilityInvokeEntryOuterClass {
       size = 0;
       if (eventId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, eventId_);
+          .computeUInt32Size(1, eventId_);
+      }
+      if (forwardPeer_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, forwardPeer_);
       }
       if (isIgnoreAuth_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isIgnoreAuth_);
+          .computeBoolSize(4, isIgnoreAuth_);
       }
       if (totalTickTime_ != 0D) {
         size += com.google.protobuf.CodedOutputStream
-          .computeDoubleSize(9, totalTickTime_);
+          .computeDoubleSize(7, totalTickTime_);
       }
-      if (argumentType_ != emu.grasscutter.net.proto.AbilityInvokeArgumentOuterClass.AbilityInvokeArgument.ABILITY_INVOKE_ARGUMENT_NONE.getNumber()) {
+      if (head_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, argumentType_);
+          .computeMessageSize(10, getHead());
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, entityId_);
       }
-      if (head_ != null) {
+      if (!abilityData_.isEmpty()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getHead());
+          .computeBytesSize(12, abilityData_);
       }
       if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(13, forwardType_);
       }
-      if (forwardPeer_ != 0) {
+      if (argumentType_ != emu.grasscutter.net.proto.AbilityInvokeArgumentOuterClass.AbilityInvokeArgument.ABILITY_INVOKE_ARGUMENT_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, forwardPeer_);
-      }
-      if (!abilityData_.isEmpty()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(15, abilityData_);
+          .computeEnumSize(15, argumentType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -843,14 +843,14 @@ public final class AbilityInvokeEntryOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead, emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHeadOrBuilder> headBuilder_;
       /**
-       * <code>.AbilityInvokeEntryHead head = 12;</code>
+       * <code>.AbilityInvokeEntryHead head = 10;</code>
        * @return Whether the head field is set.
        */
       public boolean hasHead() {
         return headBuilder_ != null || head_ != null;
       }
       /**
-       * <code>.AbilityInvokeEntryHead head = 12;</code>
+       * <code>.AbilityInvokeEntryHead head = 10;</code>
        * @return The head.
        */
       public emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead getHead() {
@@ -861,7 +861,7 @@ public final class AbilityInvokeEntryOuterClass {
         }
       }
       /**
-       * <code>.AbilityInvokeEntryHead head = 12;</code>
+       * <code>.AbilityInvokeEntryHead head = 10;</code>
        */
       public Builder setHead(emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead value) {
         if (headBuilder_ == null) {
@@ -877,7 +877,7 @@ public final class AbilityInvokeEntryOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntryHead head = 12;</code>
+       * <code>.AbilityInvokeEntryHead head = 10;</code>
        */
       public Builder setHead(
           emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead.Builder builderForValue) {
@@ -891,7 +891,7 @@ public final class AbilityInvokeEntryOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntryHead head = 12;</code>
+       * <code>.AbilityInvokeEntryHead head = 10;</code>
        */
       public Builder mergeHead(emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead value) {
         if (headBuilder_ == null) {
@@ -909,7 +909,7 @@ public final class AbilityInvokeEntryOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntryHead head = 12;</code>
+       * <code>.AbilityInvokeEntryHead head = 10;</code>
        */
       public Builder clearHead() {
         if (headBuilder_ == null) {
@@ -923,7 +923,7 @@ public final class AbilityInvokeEntryOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntryHead head = 12;</code>
+       * <code>.AbilityInvokeEntryHead head = 10;</code>
        */
       public emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead.Builder getHeadBuilder() {
         
@@ -931,7 +931,7 @@ public final class AbilityInvokeEntryOuterClass {
         return getHeadFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AbilityInvokeEntryHead head = 12;</code>
+       * <code>.AbilityInvokeEntryHead head = 10;</code>
        */
       public emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHeadOrBuilder getHeadOrBuilder() {
         if (headBuilder_ != null) {
@@ -942,7 +942,7 @@ public final class AbilityInvokeEntryOuterClass {
         }
       }
       /**
-       * <code>.AbilityInvokeEntryHead head = 12;</code>
+       * <code>.AbilityInvokeEntryHead head = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead, emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHeadOrBuilder> 
@@ -960,7 +960,7 @@ public final class AbilityInvokeEntryOuterClass {
 
       private com.google.protobuf.ByteString abilityData_ = com.google.protobuf.ByteString.EMPTY;
       /**
-       * <code>bytes ability_data = 15;</code>
+       * <code>bytes ability_data = 12;</code>
        * @return The abilityData.
        */
       @java.lang.Override
@@ -968,7 +968,7 @@ public final class AbilityInvokeEntryOuterClass {
         return abilityData_;
       }
       /**
-       * <code>bytes ability_data = 15;</code>
+       * <code>bytes ability_data = 12;</code>
        * @param value The abilityData to set.
        * @return This builder for chaining.
        */
@@ -982,7 +982,7 @@ public final class AbilityInvokeEntryOuterClass {
         return this;
       }
       /**
-       * <code>bytes ability_data = 15;</code>
+       * <code>bytes ability_data = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearAbilityData() {
@@ -994,14 +994,14 @@ public final class AbilityInvokeEntryOuterClass {
 
       private int argumentType_ = 0;
       /**
-       * <code>.AbilityInvokeArgument argument_type = 10;</code>
+       * <code>.AbilityInvokeArgument argument_type = 15;</code>
        * @return The enum numeric value on the wire for argumentType.
        */
       @java.lang.Override public int getArgumentTypeValue() {
         return argumentType_;
       }
       /**
-       * <code>.AbilityInvokeArgument argument_type = 10;</code>
+       * <code>.AbilityInvokeArgument argument_type = 15;</code>
        * @param value The enum numeric value on the wire for argumentType to set.
        * @return This builder for chaining.
        */
@@ -1012,7 +1012,7 @@ public final class AbilityInvokeEntryOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityInvokeArgument argument_type = 10;</code>
+       * <code>.AbilityInvokeArgument argument_type = 15;</code>
        * @return The argumentType.
        */
       @java.lang.Override
@@ -1022,7 +1022,7 @@ public final class AbilityInvokeEntryOuterClass {
         return result == null ? emu.grasscutter.net.proto.AbilityInvokeArgumentOuterClass.AbilityInvokeArgument.UNRECOGNIZED : result;
       }
       /**
-       * <code>.AbilityInvokeArgument argument_type = 10;</code>
+       * <code>.AbilityInvokeArgument argument_type = 15;</code>
        * @param value The argumentType to set.
        * @return This builder for chaining.
        */
@@ -1036,7 +1036,7 @@ public final class AbilityInvokeEntryOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityInvokeArgument argument_type = 10;</code>
+       * <code>.AbilityInvokeArgument argument_type = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearArgumentType() {
@@ -1102,7 +1102,7 @@ public final class AbilityInvokeEntryOuterClass {
 
       private int forwardPeer_ ;
       /**
-       * <code>uint32 forward_peer = 14;</code>
+       * <code>uint32 forward_peer = 2;</code>
        * @return The forwardPeer.
        */
       @java.lang.Override
@@ -1110,7 +1110,7 @@ public final class AbilityInvokeEntryOuterClass {
         return forwardPeer_;
       }
       /**
-       * <code>uint32 forward_peer = 14;</code>
+       * <code>uint32 forward_peer = 2;</code>
        * @param value The forwardPeer to set.
        * @return This builder for chaining.
        */
@@ -1121,7 +1121,7 @@ public final class AbilityInvokeEntryOuterClass {
         return this;
       }
       /**
-       * <code>uint32 forward_peer = 14;</code>
+       * <code>uint32 forward_peer = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearForwardPeer() {
@@ -1133,7 +1133,7 @@ public final class AbilityInvokeEntryOuterClass {
 
       private int eventId_ ;
       /**
-       * <code>uint32 event_id = 2;</code>
+       * <code>uint32 event_id = 1;</code>
        * @return The eventId.
        */
       @java.lang.Override
@@ -1141,7 +1141,7 @@ public final class AbilityInvokeEntryOuterClass {
         return eventId_;
       }
       /**
-       * <code>uint32 event_id = 2;</code>
+       * <code>uint32 event_id = 1;</code>
        * @param value The eventId to set.
        * @return This builder for chaining.
        */
@@ -1152,7 +1152,7 @@ public final class AbilityInvokeEntryOuterClass {
         return this;
       }
       /**
-       * <code>uint32 event_id = 2;</code>
+       * <code>uint32 event_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearEventId() {
@@ -1164,7 +1164,7 @@ public final class AbilityInvokeEntryOuterClass {
 
       private boolean isIgnoreAuth_ ;
       /**
-       * <code>bool is_ignore_auth = 6;</code>
+       * <code>bool is_ignore_auth = 4;</code>
        * @return The isIgnoreAuth.
        */
       @java.lang.Override
@@ -1172,7 +1172,7 @@ public final class AbilityInvokeEntryOuterClass {
         return isIgnoreAuth_;
       }
       /**
-       * <code>bool is_ignore_auth = 6;</code>
+       * <code>bool is_ignore_auth = 4;</code>
        * @param value The isIgnoreAuth to set.
        * @return This builder for chaining.
        */
@@ -1183,7 +1183,7 @@ public final class AbilityInvokeEntryOuterClass {
         return this;
       }
       /**
-       * <code>bool is_ignore_auth = 6;</code>
+       * <code>bool is_ignore_auth = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsIgnoreAuth() {
@@ -1195,7 +1195,7 @@ public final class AbilityInvokeEntryOuterClass {
 
       private double totalTickTime_ ;
       /**
-       * <code>double total_tick_time = 9;</code>
+       * <code>double total_tick_time = 7;</code>
        * @return The totalTickTime.
        */
       @java.lang.Override
@@ -1203,7 +1203,7 @@ public final class AbilityInvokeEntryOuterClass {
         return totalTickTime_;
       }
       /**
-       * <code>double total_tick_time = 9;</code>
+       * <code>double total_tick_time = 7;</code>
        * @param value The totalTickTime to set.
        * @return This builder for chaining.
        */
@@ -1214,7 +1214,7 @@ public final class AbilityInvokeEntryOuterClass {
         return this;
       }
       /**
-       * <code>double total_tick_time = 9;</code>
+       * <code>double total_tick_time = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearTotalTickTime() {
@@ -1293,13 +1293,13 @@ public final class AbilityInvokeEntryOuterClass {
       "\n\030AbilityInvokeEntry.proto\032\033AbilityInvok" +
       "eArgument.proto\032\034AbilityInvokeEntryHead." +
       "proto\032\021ForwardType.proto\"\220\002\n\022AbilityInvo" +
-      "keEntry\022\021\n\tentity_id\030\013 \001(\r\022%\n\004head\030\014 \001(\013" +
+      "keEntry\022\021\n\tentity_id\030\013 \001(\r\022%\n\004head\030\n \001(\013" +
       "2\027.AbilityInvokeEntryHead\022\024\n\014ability_dat" +
-      "a\030\017 \001(\014\022-\n\rargument_type\030\n \001(\0162\026.Ability" +
+      "a\030\014 \001(\014\022-\n\rargument_type\030\017 \001(\0162\026.Ability" +
       "InvokeArgument\022\"\n\014forward_type\030\r \001(\0162\014.F" +
-      "orwardType\022\024\n\014forward_peer\030\016 \001(\r\022\020\n\010even" +
-      "t_id\030\002 \001(\r\022\026\n\016is_ignore_auth\030\006 \001(\010\022\027\n\017to" +
-      "tal_tick_time\030\t \001(\001B\033\n\031emu.grasscutter.n" +
+      "orwardType\022\024\n\014forward_peer\030\002 \001(\r\022\020\n\010even" +
+      "t_id\030\001 \001(\r\022\026\n\016is_ignore_auth\030\004 \001(\010\022\027\n\017to" +
+      "tal_tick_time\030\007 \001(\001B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

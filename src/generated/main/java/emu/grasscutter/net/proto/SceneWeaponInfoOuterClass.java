@@ -119,10 +119,6 @@ public final class SceneWeaponInfoOuterClass {
     emu.grasscutter.net.proto.EntityRendererChangedInfoOuterClass.EntityRendererChangedInfoOrBuilder getRendererChangedInfoOrBuilder();
   }
   /**
-   * <pre>
-   * Obf: MGEGKKGBHPI
-   * </pre>
-   *
    * Protobuf type {@code SceneWeaponInfo}
    */
   public static final class SceneWeaponInfo extends
@@ -746,10 +742,6 @@ public final class SceneWeaponInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: MGEGKKGBHPI
-     * </pre>
-     *
      * Protobuf type {@code SceneWeaponInfo}
      */
     public static final class Builder extends

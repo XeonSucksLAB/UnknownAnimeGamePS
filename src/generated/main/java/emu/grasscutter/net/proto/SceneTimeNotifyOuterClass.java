@@ -38,7 +38,7 @@ public final class SceneTimeNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 20024
+   * CmdId: 23193
    * </pre>
    *
    * Protobuf type {@code SceneTimeNotify}
@@ -346,7 +346,7 @@ public final class SceneTimeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20024
+     * CmdId: 23193
      * </pre>
      *
      * Protobuf type {@code SceneTimeNotify}

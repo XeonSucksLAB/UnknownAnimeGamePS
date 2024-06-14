@@ -95,10 +95,6 @@ public final class ClientGadgetInfoOuterClass {
     int getTargetLockPointIndexList(int index);
   }
   /**
-   * <pre>
-   * Obf: KCPDCBKPNNL
-   * </pre>
-   *
    * Protobuf type {@code ClientGadgetInfo}
    */
   public static final class ClientGadgetInfo extends
@@ -674,10 +670,6 @@ public final class ClientGadgetInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: KCPDCBKPNNL
-     * </pre>
-     *
      * Protobuf type {@code ClientGadgetInfo}
      */
     public static final class Builder extends

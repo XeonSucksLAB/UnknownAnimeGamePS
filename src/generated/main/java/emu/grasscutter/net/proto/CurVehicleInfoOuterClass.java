@@ -73,10 +73,6 @@ public final class CurVehicleInfoOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getJGOGBMEKOPPOrBuilder();
   }
   /**
-   * <pre>
-   * Obf: LNHHODFOLCP
-   * </pre>
-   *
    * Protobuf type {@code CurVehicleInfo}
    */
   public static final class CurVehicleInfo extends
@@ -516,10 +512,6 @@ public final class CurVehicleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: LNHHODFOLCP
-     * </pre>
-     *
      * Protobuf type {@code CurVehicleInfo}
      */
     public static final class Builder extends

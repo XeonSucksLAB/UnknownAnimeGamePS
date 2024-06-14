@@ -31,7 +31,7 @@ public final class GetScenePointReqOuterClass {
     int getSceneId();
 
     /**
-     * <code>bool APPFPHLAKBG = 6;</code>
+     * <code>bool APPFPHLAKBG = 3;</code>
      * @return The aPPFPHLAKBG.
      */
     boolean getAPPFPHLAKBG();
@@ -90,7 +90,7 @@ public final class GetScenePointReqOuterClass {
               sceneId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 24: {
 
               aPPFPHLAKBG_ = input.readBool();
               break;
@@ -154,10 +154,10 @@ public final class GetScenePointReqOuterClass {
       return sceneId_;
     }
 
-    public static final int APPFPHLAKBG_FIELD_NUMBER = 6;
+    public static final int APPFPHLAKBG_FIELD_NUMBER = 3;
     private boolean aPPFPHLAKBG_;
     /**
-     * <code>bool APPFPHLAKBG = 6;</code>
+     * <code>bool APPFPHLAKBG = 3;</code>
      * @return The aPPFPHLAKBG.
      */
     @java.lang.Override
@@ -183,7 +183,7 @@ public final class GetScenePointReqOuterClass {
         output.writeUInt32(1, sceneId_);
       }
       if (aPPFPHLAKBG_ != false) {
-        output.writeBool(6, aPPFPHLAKBG_);
+        output.writeBool(3, aPPFPHLAKBG_);
       }
       if (belongUid_ != 0) {
         output.writeUInt32(10, belongUid_);
@@ -203,7 +203,7 @@ public final class GetScenePointReqOuterClass {
       }
       if (aPPFPHLAKBG_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, aPPFPHLAKBG_);
+          .computeBoolSize(3, aPPFPHLAKBG_);
       }
       if (belongUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -570,7 +570,7 @@ public final class GetScenePointReqOuterClass {
 
       private boolean aPPFPHLAKBG_ ;
       /**
-       * <code>bool APPFPHLAKBG = 6;</code>
+       * <code>bool APPFPHLAKBG = 3;</code>
        * @return The aPPFPHLAKBG.
        */
       @java.lang.Override
@@ -578,7 +578,7 @@ public final class GetScenePointReqOuterClass {
         return aPPFPHLAKBG_;
       }
       /**
-       * <code>bool APPFPHLAKBG = 6;</code>
+       * <code>bool APPFPHLAKBG = 3;</code>
        * @param value The aPPFPHLAKBG to set.
        * @return This builder for chaining.
        */
@@ -589,7 +589,7 @@ public final class GetScenePointReqOuterClass {
         return this;
       }
       /**
-       * <code>bool APPFPHLAKBG = 6;</code>
+       * <code>bool APPFPHLAKBG = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearAPPFPHLAKBG() {
@@ -667,7 +667,7 @@ public final class GetScenePointReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\026GetScenePointReq.proto\"M\n\020GetScenePoin" +
       "tReq\022\022\n\nbelong_uid\030\n \001(\r\022\020\n\010scene_id\030\001 \001" +
-      "(\r\022\023\n\013APPFPHLAKBG\030\006 \001(\010B\033\n\031emu.grasscutt" +
+      "(\r\022\023\n\013APPFPHLAKBG\030\003 \001(\010B\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -43,10 +43,6 @@ public final class WeeklyBossResinDiscountInfoOuterClass {
     int getOriginalResinCost();
   }
   /**
-   * <pre>
-   * Obf: PABMLHHIDDM
-   * </pre>
-   *
    * Protobuf type {@code WeeklyBossResinDiscountInfo}
    */
   public static final class WeeklyBossResinDiscountInfo extends
@@ -376,10 +372,6 @@ public final class WeeklyBossResinDiscountInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: PABMLHHIDDM
-     * </pre>
-     *
      * Protobuf type {@code WeeklyBossResinDiscountInfo}
      */
     public static final class Builder extends

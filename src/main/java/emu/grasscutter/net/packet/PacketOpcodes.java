@@ -53,6 +53,13 @@ public final class PacketOpcodes {
     public static final int MarkMapReq = 9954;
     public static final int SetUpAvatarTeamReq = 24152; // No Rsp and Notify atm
     public static final int ChangeAvatarReq = 21461; // No Rsp and Notify atm
+    public static final int SetPlayerSignatureReq = 25315;
+    public static final int SetPlayerSignatureRsp = 23156;
+    public static final int SetPlayerNameReq = 6220;
+    public static final int SetPlayerNameRsp = 8361;
+    public static final int ChangeAvatarRsp = 21804;
+    public static final int SceneEntityDisappearNotify = 7872;
+    public static final int AvatarTeamUpdateNotify = 4042;
 
     // 4.7.0 Obfuscated
 
@@ -63,9 +70,7 @@ public final class PacketOpcodes {
     public static final int EvtAvatarStandUpNotify = 1;
     public static final int ChangeGameTimeRsp = 1;
     public static final int PlayerGameTimeNotify = 1;
-    public static final int AvatarTeamUpdateNotify = 1;
     public static final int SetUpAvatarTeamRsp = 1;
-    public static final int ChangeAvatarRsp = 1;
     public static final int EvtAvatarLockChairRsp = 1;
     public static final int MarkMapRsp = 1;
     public static final int AvatarChangeCostumeReq = 1;
@@ -89,7 +94,6 @@ public final class PacketOpcodes {
     public static final int WindSeedType1Notify = 1;
     public static final int CombatInvocationsNotify = 1;
     public static final int EntityFightPropUpdateNotify = 1;
-    public static final int SceneEntityDisappearNotify = 1;
     public static final int SceneEntityUpdateNotify = 1;
     public static final int AvatarLifeStateChangeNotify = 1;
     public static final int LifeStateChangeNotify = 1;
@@ -121,10 +125,6 @@ public final class PacketOpcodes {
     public static final int GetFriendShowNameCardInfoRsp = 1;
     public static final int EntityFightPropChangeReasonNotify = 1;
     public static final int PlayerPropChangeNotify = 1;
-    public static final int SetPlayerNameReq = 1;
-    public static final int SetPlayerNameRsp = 1;
-    public static final int SetPlayerSignatureReq = 1;
-    public static final int SetPlayerSignatureRsp = 1;
     public static final int SetPlayerBirthdayReq = 1;
     public static final int SetPlayerBirthdayRsp = 1;
     public static final int EvtAiSyncSkillCdNotify = 1;

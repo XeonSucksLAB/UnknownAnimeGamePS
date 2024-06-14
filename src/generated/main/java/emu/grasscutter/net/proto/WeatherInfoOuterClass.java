@@ -25,10 +25,6 @@ public final class WeatherInfoOuterClass {
     int getWeatherAreaId();
   }
   /**
-   * <pre>
-   * Obf: OGJENPCDJEN
-   * </pre>
-   *
    * Protobuf type {@code WeatherInfo}
    */
   public static final class WeatherInfo extends
@@ -277,10 +273,6 @@ public final class WeatherInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OGJENPCDJEN
-     * </pre>
-     *
      * Protobuf type {@code WeatherInfo}
      */
     public static final class Builder extends

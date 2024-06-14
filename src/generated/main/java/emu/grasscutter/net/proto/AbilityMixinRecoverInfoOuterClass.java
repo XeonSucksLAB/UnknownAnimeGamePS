@@ -111,10 +111,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
     public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.SourceCase getSourceCase();
   }
   /**
-   * <pre>
-   * Obf: NNBAGDGFEKA
-   * </pre>
-   *
    * Protobuf type {@code AbilityMixinRecoverInfo}
    */
   public static final class AbilityMixinRecoverInfo extends
@@ -730,10 +726,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NNBAGDGFEKA
-     * </pre>
-     *
      * Protobuf type {@code AbilityMixinRecoverInfo}
      */
     public static final class Builder extends

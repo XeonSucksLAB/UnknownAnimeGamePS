@@ -40,13 +40,13 @@ public final class ChangeAvatarReqOuterClass {
     long getGuid();
 
     /**
-     * <code>bool is_move = 9;</code>
+     * <code>bool is_move = 1;</code>
      * @return The isMove.
      */
     boolean getIsMove();
 
     /**
-     * <code>uint32 skill_id = 7;</code>
+     * <code>uint32 skill_id = 9;</code>
      * @return The skillId.
      */
     int getSkillId();
@@ -100,19 +100,19 @@ public final class ChangeAvatarReqOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              isMove_ = input.readBool();
+              break;
+            }
             case 16: {
 
               guid_ = input.readUInt64();
               break;
             }
-            case 56: {
-
-              skillId_ = input.readUInt32();
-              break;
-            }
             case 72: {
 
-              isMove_ = input.readBool();
+              skillId_ = input.readUInt32();
               break;
             }
             case 122: {
@@ -197,10 +197,10 @@ public final class ChangeAvatarReqOuterClass {
       return guid_;
     }
 
-    public static final int IS_MOVE_FIELD_NUMBER = 9;
+    public static final int IS_MOVE_FIELD_NUMBER = 1;
     private boolean isMove_;
     /**
-     * <code>bool is_move = 9;</code>
+     * <code>bool is_move = 1;</code>
      * @return The isMove.
      */
     @java.lang.Override
@@ -208,10 +208,10 @@ public final class ChangeAvatarReqOuterClass {
       return isMove_;
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 7;
+    public static final int SKILL_ID_FIELD_NUMBER = 9;
     private int skillId_;
     /**
-     * <code>uint32 skill_id = 7;</code>
+     * <code>uint32 skill_id = 9;</code>
      * @return The skillId.
      */
     @java.lang.Override
@@ -233,14 +233,14 @@ public final class ChangeAvatarReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (isMove_ != false) {
+        output.writeBool(1, isMove_);
+      }
       if (guid_ != 0L) {
         output.writeUInt64(2, guid_);
       }
       if (skillId_ != 0) {
-        output.writeUInt32(7, skillId_);
-      }
-      if (isMove_ != false) {
-        output.writeBool(9, isMove_);
+        output.writeUInt32(9, skillId_);
       }
       if (movePos_ != null) {
         output.writeMessage(15, getMovePos());
@@ -254,17 +254,17 @@ public final class ChangeAvatarReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isMove_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, isMove_);
+      }
       if (guid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(2, guid_);
       }
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, skillId_);
-      }
-      if (isMove_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isMove_);
+          .computeUInt32Size(9, skillId_);
       }
       if (movePos_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -743,7 +743,7 @@ public final class ChangeAvatarReqOuterClass {
 
       private boolean isMove_ ;
       /**
-       * <code>bool is_move = 9;</code>
+       * <code>bool is_move = 1;</code>
        * @return The isMove.
        */
       @java.lang.Override
@@ -751,7 +751,7 @@ public final class ChangeAvatarReqOuterClass {
         return isMove_;
       }
       /**
-       * <code>bool is_move = 9;</code>
+       * <code>bool is_move = 1;</code>
        * @param value The isMove to set.
        * @return This builder for chaining.
        */
@@ -762,7 +762,7 @@ public final class ChangeAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_move = 9;</code>
+       * <code>bool is_move = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsMove() {
@@ -774,7 +774,7 @@ public final class ChangeAvatarReqOuterClass {
 
       private int skillId_ ;
       /**
-       * <code>uint32 skill_id = 7;</code>
+       * <code>uint32 skill_id = 9;</code>
        * @return The skillId.
        */
       @java.lang.Override
@@ -782,7 +782,7 @@ public final class ChangeAvatarReqOuterClass {
         return skillId_;
       }
       /**
-       * <code>uint32 skill_id = 7;</code>
+       * <code>uint32 skill_id = 9;</code>
        * @param value The skillId to set.
        * @return This builder for chaining.
        */
@@ -793,7 +793,7 @@ public final class ChangeAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 skill_id = 7;</code>
+       * <code>uint32 skill_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillId() {
@@ -871,8 +871,8 @@ public final class ChangeAvatarReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\025ChangeAvatarReq.proto\032\014Vector.proto\"]\n" +
       "\017ChangeAvatarReq\022\031\n\010move_pos\030\017 \001(\0132\007.Vec" +
-      "tor\022\014\n\004guid\030\002 \001(\004\022\017\n\007is_move\030\t \001(\010\022\020\n\010sk" +
-      "ill_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "tor\022\014\n\004guid\030\002 \001(\004\022\017\n\007is_move\030\001 \001(\010\022\020\n\010sk" +
+      "ill_id\030\t \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

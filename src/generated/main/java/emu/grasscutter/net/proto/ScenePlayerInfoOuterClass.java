@@ -19,7 +19,7 @@ public final class ScenePlayerInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_connected = 3;</code>
+     * <code>bool is_connected = 7;</code>
      * @return The isConnected.
      */
     boolean getIsConnected();
@@ -64,7 +64,7 @@ public final class ScenePlayerInfoOuterClass {
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getOnlinePlayerInfoOrBuilder();
 
     /**
-     * <code>uint32 peer_id = 8;</code>
+     * <code>uint32 peer_id = 3;</code>
      * @return The peerId.
      */
     int getPeerId();
@@ -117,7 +117,7 @@ public final class ScenePlayerInfoOuterClass {
               break;
             case 24: {
 
-              isConnected_ = input.readBool();
+              peerId_ = input.readUInt32();
               break;
             }
             case 50: {
@@ -133,9 +133,9 @@ public final class ScenePlayerInfoOuterClass {
 
               break;
             }
-            case 64: {
+            case 56: {
 
-              peerId_ = input.readUInt32();
+              isConnected_ = input.readBool();
               break;
             }
             case 72: {
@@ -186,10 +186,10 @@ public final class ScenePlayerInfoOuterClass {
               emu.grasscutter.net.proto.ScenePlayerInfoOuterClass.ScenePlayerInfo.class, emu.grasscutter.net.proto.ScenePlayerInfoOuterClass.ScenePlayerInfo.Builder.class);
     }
 
-    public static final int IS_CONNECTED_FIELD_NUMBER = 3;
+    public static final int IS_CONNECTED_FIELD_NUMBER = 7;
     private boolean isConnected_;
     /**
-     * <code>bool is_connected = 3;</code>
+     * <code>bool is_connected = 7;</code>
      * @return The isConnected.
      */
     @java.lang.Override
@@ -283,10 +283,10 @@ public final class ScenePlayerInfoOuterClass {
       return getOnlinePlayerInfo();
     }
 
-    public static final int PEER_ID_FIELD_NUMBER = 8;
+    public static final int PEER_ID_FIELD_NUMBER = 3;
     private int peerId_;
     /**
-     * <code>uint32 peer_id = 8;</code>
+     * <code>uint32 peer_id = 3;</code>
      * @return The peerId.
      */
     @java.lang.Override
@@ -308,14 +308,14 @@ public final class ScenePlayerInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isConnected_ != false) {
-        output.writeBool(3, isConnected_);
+      if (peerId_ != 0) {
+        output.writeUInt32(3, peerId_);
       }
       if (onlinePlayerInfo_ != null) {
         output.writeMessage(6, getOnlinePlayerInfo());
       }
-      if (peerId_ != 0) {
-        output.writeUInt32(8, peerId_);
+      if (isConnected_ != false) {
+        output.writeBool(7, isConnected_);
       }
       if (uid_ != 0) {
         output.writeUInt32(9, uid_);
@@ -335,17 +335,17 @@ public final class ScenePlayerInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isConnected_ != false) {
+      if (peerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isConnected_);
+          .computeUInt32Size(3, peerId_);
       }
       if (onlinePlayerInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, getOnlinePlayerInfo());
       }
-      if (peerId_ != 0) {
+      if (isConnected_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, peerId_);
+          .computeBoolSize(7, isConnected_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -697,7 +697,7 @@ public final class ScenePlayerInfoOuterClass {
 
       private boolean isConnected_ ;
       /**
-       * <code>bool is_connected = 3;</code>
+       * <code>bool is_connected = 7;</code>
        * @return The isConnected.
        */
       @java.lang.Override
@@ -705,7 +705,7 @@ public final class ScenePlayerInfoOuterClass {
         return isConnected_;
       }
       /**
-       * <code>bool is_connected = 3;</code>
+       * <code>bool is_connected = 7;</code>
        * @param value The isConnected to set.
        * @return This builder for chaining.
        */
@@ -716,7 +716,7 @@ public final class ScenePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_connected = 3;</code>
+       * <code>bool is_connected = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsConnected() {
@@ -985,7 +985,7 @@ public final class ScenePlayerInfoOuterClass {
 
       private int peerId_ ;
       /**
-       * <code>uint32 peer_id = 8;</code>
+       * <code>uint32 peer_id = 3;</code>
        * @return The peerId.
        */
       @java.lang.Override
@@ -993,7 +993,7 @@ public final class ScenePlayerInfoOuterClass {
         return peerId_;
       }
       /**
-       * <code>uint32 peer_id = 8;</code>
+       * <code>uint32 peer_id = 3;</code>
        * @param value The peerId to set.
        * @return This builder for chaining.
        */
@@ -1004,7 +1004,7 @@ public final class ScenePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 peer_id = 8;</code>
+       * <code>uint32 peer_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearPeerId() {
@@ -1082,9 +1082,9 @@ public final class ScenePlayerInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\025ScenePlayerInfo.proto\032\026OnlinePlayerInf" +
       "o.proto\"\224\001\n\017ScenePlayerInfo\022\024\n\014is_connec" +
-      "ted\030\003 \001(\010\022\014\n\004name\030\013 \001(\t\022\020\n\010scene_id\030\017 \001(" +
+      "ted\030\007 \001(\010\022\014\n\004name\030\013 \001(\t\022\020\n\010scene_id\030\017 \001(" +
       "\r\022\013\n\003uid\030\t \001(\r\022-\n\022online_player_info\030\006 \001" +
-      "(\0132\021.OnlinePlayerInfo\022\017\n\007peer_id\030\010 \001(\rB\033" +
+      "(\0132\021.OnlinePlayerInfo\022\017\n\007peer_id\030\003 \001(\rB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

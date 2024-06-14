@@ -59,10 +59,6 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
     int getSkillLevelList(int index);
   }
   /**
-   * <pre>
-   * Obf: BKGOLPBLKMN
-   * </pre>
-   *
    * Protobuf type {@code BreakoutSyncConnectUidInfo}
    */
   public static final class BreakoutSyncConnectUidInfo extends
@@ -473,10 +469,6 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: BKGOLPBLKMN
-     * </pre>
-     *
      * Protobuf type {@code BreakoutSyncConnectUidInfo}
      */
     public static final class Builder extends

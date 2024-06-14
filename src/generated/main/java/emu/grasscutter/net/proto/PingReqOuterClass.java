@@ -43,7 +43,7 @@ public final class PingReqOuterClass {
     int getClientTime();
 
     /**
-     * <code>uint32 seq = 12;</code>
+     * <code>uint32 seq = 14;</code>
      * @return The seq.
      */
     int getSeq();
@@ -118,7 +118,7 @@ public final class PingReqOuterClass {
               totalTickTime_ = input.readDouble();
               break;
             }
-            case 96: {
+            case 112: {
 
               seq_ = input.readUInt32();
               break;
@@ -199,10 +199,10 @@ public final class PingReqOuterClass {
       return clientTime_;
     }
 
-    public static final int SEQ_FIELD_NUMBER = 12;
+    public static final int SEQ_FIELD_NUMBER = 14;
     private int seq_;
     /**
-     * <code>uint32 seq = 12;</code>
+     * <code>uint32 seq = 14;</code>
      * @return The seq.
      */
     @java.lang.Override
@@ -237,7 +237,7 @@ public final class PingReqOuterClass {
         output.writeDouble(11, totalTickTime_);
       }
       if (seq_ != 0) {
-        output.writeUInt32(12, seq_);
+        output.writeUInt32(14, seq_);
       }
       unknownFields.writeTo(output);
     }
@@ -266,7 +266,7 @@ public final class PingReqOuterClass {
       }
       if (seq_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, seq_);
+          .computeUInt32Size(14, seq_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -717,7 +717,7 @@ public final class PingReqOuterClass {
 
       private int seq_ ;
       /**
-       * <code>uint32 seq = 12;</code>
+       * <code>uint32 seq = 14;</code>
        * @return The seq.
        */
       @java.lang.Override
@@ -725,7 +725,7 @@ public final class PingReqOuterClass {
         return seq_;
       }
       /**
-       * <code>uint32 seq = 12;</code>
+       * <code>uint32 seq = 14;</code>
        * @param value The seq to set.
        * @return This builder for chaining.
        */
@@ -736,7 +736,7 @@ public final class PingReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 seq = 12;</code>
+       * <code>uint32 seq = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearSeq() {
@@ -814,7 +814,7 @@ public final class PingReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\rPingReq.proto\"f\n\007PingReq\022\017\n\007sc_data\030\001 " +
       "\001(\014\022\017\n\007ue_time\030\003 \001(\002\022\027\n\017total_tick_time\030" +
-      "\013 \001(\001\022\023\n\013client_time\030\t \001(\r\022\013\n\003seq\030\014 \001(\rB" +
+      "\013 \001(\001\022\023\n\013client_time\030\t \001(\r\022\013\n\003seq\030\016 \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

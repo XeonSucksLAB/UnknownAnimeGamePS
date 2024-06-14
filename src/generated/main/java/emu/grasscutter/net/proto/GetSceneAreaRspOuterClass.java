@@ -66,7 +66,7 @@ public final class GetSceneAreaRspOuterClass {
     int getSceneId();
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -123,11 +123,6 @@ public final class GetSceneAreaRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
             case 24: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 areaIdList_ = newIntList();
@@ -152,6 +147,11 @@ public final class GetSceneAreaRspOuterClass {
             case 40: {
 
               sceneId_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              retcode_ = input.readInt32();
               break;
             }
             case 122: {
@@ -280,10 +280,10 @@ public final class GetSceneAreaRspOuterClass {
       return sceneId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -306,9 +306,6 @@ public final class GetSceneAreaRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
-      }
       if (getAreaIdListList().size() > 0) {
         output.writeUInt32NoTag(26);
         output.writeUInt32NoTag(areaIdListMemoizedSerializedSize);
@@ -318,6 +315,9 @@ public final class GetSceneAreaRspOuterClass {
       }
       if (sceneId_ != 0) {
         output.writeUInt32(5, sceneId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(6, retcode_);
       }
       for (int i = 0; i < cityInfoList_.size(); i++) {
         output.writeMessage(15, cityInfoList_.get(i));
@@ -331,10 +331,6 @@ public final class GetSceneAreaRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < areaIdList_.size(); i++) {
@@ -352,6 +348,10 @@ public final class GetSceneAreaRspOuterClass {
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, sceneId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, retcode_);
       }
       for (int i = 0; i < cityInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -1068,7 +1068,7 @@ public final class GetSceneAreaRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -1076,7 +1076,7 @@ public final class GetSceneAreaRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -1087,7 +1087,7 @@ public final class GetSceneAreaRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -1166,7 +1166,7 @@ public final class GetSceneAreaRspOuterClass {
       "\n\025GetSceneAreaRsp.proto\032\016CityInfo.proto\"" +
       "m\n\017GetSceneAreaRsp\022!\n\016city_info_list\030\017 \003" +
       "(\0132\t.CityInfo\022\024\n\014area_id_list\030\003 \003(\r\022\020\n\010s" +
-      "cene_id\030\005 \001(\r\022\017\n\007retcode\030\001 \001(\005B\033\n\031emu.gr" +
+      "cene_id\030\005 \001(\r\022\017\n\007retcode\030\006 \001(\005B\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

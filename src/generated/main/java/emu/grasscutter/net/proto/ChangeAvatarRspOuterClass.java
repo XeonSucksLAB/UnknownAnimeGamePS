@@ -19,11 +19,7 @@ public final class ChangeAvatarRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
-     * <code>uint64 cur_guid = 3;</code>
+     * <code>uint64 cur_guid = 8;</code>
      * @return The curGuid.
      */
     long getCurGuid();
@@ -41,6 +37,10 @@ public final class ChangeAvatarRspOuterClass {
     int getSkillId();
   }
   /**
+   * <pre>
+   * CmdId: 21804
+   * </pre>
+   *
    * Protobuf type {@code ChangeAvatarRsp}
    */
   public static final class ChangeAvatarRsp extends
@@ -85,14 +85,14 @@ public final class ChangeAvatarRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              curGuid_ = input.readUInt64();
-              break;
-            }
             case 32: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 64: {
+
+              curGuid_ = input.readUInt64();
               break;
             }
             case 72: {
@@ -132,14 +132,10 @@ public final class ChangeAvatarRspOuterClass {
               emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp.class, emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp.Builder.class);
     }
 
-    public static final int CUR_GUID_FIELD_NUMBER = 3;
+    public static final int CUR_GUID_FIELD_NUMBER = 8;
     private long curGuid_;
     /**
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
-     * <code>uint64 cur_guid = 3;</code>
+     * <code>uint64 cur_guid = 8;</code>
      * @return The curGuid.
      */
     @java.lang.Override
@@ -183,11 +179,11 @@ public final class ChangeAvatarRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (curGuid_ != 0L) {
-        output.writeUInt64(3, curGuid_);
-      }
       if (retcode_ != 0) {
         output.writeInt32(4, retcode_);
+      }
+      if (curGuid_ != 0L) {
+        output.writeUInt64(8, curGuid_);
       }
       if (skillId_ != 0) {
         output.writeUInt32(9, skillId_);
@@ -201,13 +197,13 @@ public final class ChangeAvatarRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (curGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(3, curGuid_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(4, retcode_);
+      }
+      if (curGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(8, curGuid_);
       }
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -348,6 +344,10 @@ public final class ChangeAvatarRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 21804
+     * </pre>
+     *
      * Protobuf type {@code ChangeAvatarRsp}
      */
     public static final class Builder extends
@@ -508,11 +508,7 @@ public final class ChangeAvatarRspOuterClass {
 
       private long curGuid_ ;
       /**
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
-       * <code>uint64 cur_guid = 3;</code>
+       * <code>uint64 cur_guid = 8;</code>
        * @return The curGuid.
        */
       @java.lang.Override
@@ -520,11 +516,7 @@ public final class ChangeAvatarRspOuterClass {
         return curGuid_;
       }
       /**
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
-       * <code>uint64 cur_guid = 3;</code>
+       * <code>uint64 cur_guid = 8;</code>
        * @param value The curGuid to set.
        * @return This builder for chaining.
        */
@@ -535,11 +527,7 @@ public final class ChangeAvatarRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
-       * <code>uint64 cur_guid = 3;</code>
+       * <code>uint64 cur_guid = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurGuid() {
@@ -678,7 +666,7 @@ public final class ChangeAvatarRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025ChangeAvatarRsp.proto\"F\n\017ChangeAvatarR" +
-      "sp\022\020\n\010cur_guid\030\003 \001(\004\022\017\n\007retcode\030\004 \001(\005\022\020\n" +
+      "sp\022\020\n\010cur_guid\030\010 \001(\004\022\017\n\007retcode\030\004 \001(\005\022\020\n" +
       "\010skill_id\030\t \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };

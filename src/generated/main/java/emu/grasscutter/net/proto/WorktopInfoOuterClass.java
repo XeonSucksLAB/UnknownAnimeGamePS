@@ -42,10 +42,6 @@ public final class WorktopInfoOuterClass {
     boolean getIsGuestCanOperate();
   }
   /**
-   * <pre>
-   * Obf: FHDMCJINDAH
-   * </pre>
-   *
    * Protobuf type {@code WorktopInfo}
    */
   public static final class WorktopInfo extends
@@ -377,10 +373,6 @@ public final class WorktopInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: FHDMCJINDAH
-     * </pre>
-     *
      * Protobuf type {@code WorktopInfo}
      */
     public static final class Builder extends
