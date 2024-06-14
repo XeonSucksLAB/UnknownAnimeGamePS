@@ -19,24 +19,20 @@ public interface DatabaseObject<T> {
         return false;
     }
 
-    /**
-     * Performs a deferred save.
-     * This object will save as a group with other objects.
-     */
+    /** Performs a deferred save. This object will save as a group with other objects. */
     default void deferSave() {
         Database.save(this);
     }
 
-    /**
-     * Attempts to save this object to the database.
-     */
+    /** Attempts to save this object to the database. */
     default void save() {
         if (this.isGameObject()) {
             DatabaseManager.getGameDatastore().save(this);
         } else if (Grasscutter.getRunMode() != ServerRunMode.GAME_ONLY) {
             DatabaseManager.getAccountDatastore().save(this);
         } else {
-            throw new UnsupportedOperationException("Unable to store an account object while in game-only mode.");
+            throw new UnsupportedOperationException(
+                    "Unable to store an account object while in game-only mode.");
         }
     }
 }

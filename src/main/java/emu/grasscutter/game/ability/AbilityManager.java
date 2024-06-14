@@ -95,17 +95,17 @@ public final class AbilityManager extends BasePlayerManager {
 
         // TODO: fix the check
         // if (this.burstCasterId == entityId
-                // && (ability.getAvatarSkillStartIds().contains(this.burstSkillId) || skillInvincibility)) {
-            Grasscutter.getLogger()
-                    .trace(
-                            "Caster ID's {} burst successful, clearing energy and setting invulnerability",
-                            entityId);
-            this.abilityInvulnerable = true;
-            this.player
-                    .getEnergyManager()
-                    .handleEvtDoSkillSuccNotify(
-                            this.player.getSession(), this.burstSkillId, this.burstCasterId);
-            this.removePendingEnergyClear();
+        // && (ability.getAvatarSkillStartIds().contains(this.burstSkillId) || skillInvincibility)) {
+        Grasscutter.getLogger()
+                .trace(
+                        "Caster ID's {} burst successful, clearing energy and setting invulnerability",
+                        entityId);
+        this.abilityInvulnerable = true;
+        this.player
+                .getEnergyManager()
+                .handleEvtDoSkillSuccNotify(
+                        this.player.getSession(), this.burstSkillId, this.burstCasterId);
+        this.removePendingEnergyClear();
         // }
     }
 

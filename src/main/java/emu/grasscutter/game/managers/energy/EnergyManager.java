@@ -8,7 +8,6 @@ import emu.grasscutter.data.*;
 import emu.grasscutter.data.excels.ItemData;
 import emu.grasscutter.data.excels.avatar.AvatarSkillDepotData;
 import emu.grasscutter.data.excels.monster.MonsterData.HpDrops;
-import emu.grasscutter.game.ability.Ability;
 import emu.grasscutter.game.avatar.Avatar;
 import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.player.*;

@@ -319,10 +319,10 @@ public class Inventory extends BasePlayerManager implements Iterable<GameItem> {
                 switch (item.getItemData().getMaterialType()) {
                     case MATERIAL_AVATAR, MATERIAL_FLYCLOAK, MATERIAL_COSTUME, MATERIAL_NAMECARD -> {
                         Grasscutter.getLogger()
-                            .warn(
-                                "Attempted to add a "
-                                    + item.getItemData().getMaterialType().name()
-                                    + " to inventory, but item definition lacks isUseOnGain. This indicates a Resources error.");
+                                .warn(
+                                        "Attempted to add a "
+                                                + item.getItemData().getMaterialType().name()
+                                                + " to inventory, but item definition lacks isUseOnGain. This indicates a Resources error.");
                         return null;
                     }
                     default -> {
@@ -343,9 +343,9 @@ public class Inventory extends BasePlayerManager implements Iterable<GameItem> {
                         } else {
                             // Add count
                             existingItem.setCount(
-                                Math.min(
-                                    existingItem.getCount() + item.getCount(),
-                                    item.getItemData().getStackLimit()));
+                                    Math.min(
+                                            existingItem.getCount() + item.getCount(),
+                                            item.getItemData().getStackLimit()));
                             existingItem.save();
                             return existingItem;
                         }

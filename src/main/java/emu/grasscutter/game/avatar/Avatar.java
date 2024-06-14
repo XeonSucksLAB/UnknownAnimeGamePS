@@ -15,7 +15,6 @@ import emu.grasscutter.data.excels.avatar.AvatarSkillDepotData.InherentProudSkil
 import emu.grasscutter.data.excels.reliquary.*;
 import emu.grasscutter.data.excels.trial.TrialAvatarTemplateData;
 import emu.grasscutter.data.excels.weapon.*;
-import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.inventory.*;
 import emu.grasscutter.game.player.Player;
@@ -991,8 +990,8 @@ public class Avatar implements DatabaseObject<Avatar> {
     }
 
     /**
-     * Saves this object to the database.
-     * As of Grasscutter 1.7.1, this is by default a {@link DatabaseObject#deferSave()} call.
+     * Saves this object to the database. As of Grasscutter 1.7.1, this is by default a {@link
+     * DatabaseObject#deferSave()} call.
      */
     public void save() {
         this.deferSave();
@@ -1001,7 +1000,8 @@ public class Avatar implements DatabaseObject<Avatar> {
     /**
      * Saves this object to the database.
      *
-     * @param immediate If true, this will be a {@link DatabaseObject#save()} call instead of a {@link DatabaseObject#deferSave()} call.
+     * @param immediate If true, this will be a {@link DatabaseObject#save()} call instead of a {@link
+     *     DatabaseObject#deferSave()} call.
      */
     public void save(boolean immediate) {
         if (immediate) {

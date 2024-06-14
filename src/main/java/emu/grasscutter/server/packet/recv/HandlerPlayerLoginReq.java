@@ -1,16 +1,14 @@
 package emu.grasscutter.server.packet.recv;
 
+import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
+
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.game.avatar.Avatar;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.net.packet.*;
-import emu.grasscutter.net.proto.AvatarTypeOuterClass;
 import emu.grasscutter.net.proto.PlayerLoginReqOuterClass.PlayerLoginReq;
 import emu.grasscutter.server.game.GameSession;
-import emu.grasscutter.server.game.GameSession.SessionState;
 import emu.grasscutter.server.packet.send.PacketPlayerLoginRsp;
-
-import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
 
 @Opcodes(PacketOpcodes.PlayerLoginReq) // Sends initial data packets
 public class HandlerPlayerLoginReq extends PacketHandler {
@@ -49,8 +47,7 @@ public class HandlerPlayerLoginReq extends PacketHandler {
 
             // Check if the default Anemo skill should be given.
             if (!GAME_OPTIONS.questing.enabled) {
-                mainCharacter.setSkillDepotData(
-                    GameData.getAvatarSkillDepotDataMap().get(704));
+                mainCharacter.setSkillDepotData(GameData.getAvatarSkillDepotDataMap().get(704));
             }
 
             // Manually handle adding to team
@@ -58,10 +55,10 @@ public class HandlerPlayerLoginReq extends PacketHandler {
             player.setMainCharacterId(avatarId);
             player.setHeadImage(avatarId);
             player
-                .getTeamManager()
-                .getCurrentSinglePlayerTeamInfo()
-                .getAvatars()
-                .add(mainCharacter.getAvatarId());
+                    .getTeamManager()
+                    .getCurrentSinglePlayerTeamInfo()
+                    .getAvatars()
+                    .add(mainCharacter.getAvatarId());
             player.save(); // TODO save player team in different object
 
             // Login done
