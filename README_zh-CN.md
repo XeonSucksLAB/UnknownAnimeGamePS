@@ -28,15 +28,21 @@
 - 获取 [MongoDB Community Server](https://www.mongodb.com/try/download/community)
 - 获取游戏版本 REL5.0.0（如果你没有5.0.0客户端，你可以在这里找到并下载）：
 
-| 下载链接 | 包大小 | MD5校验码 |
-| :---: | :---: | :---: |
-| [GenshinImpact_5.0.0.zip.001](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.001) | 10.0 GB | 1ebf5dbcbe43bebcda7a57a8d789092e |
-| [GenshinImpact_5.0.0.zip.002](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.002) | 10.0 GB | 57a67026c45d57c28e5b52e24e84cc04 |
-| [GenshinImpact_5.0.0.zip.003](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.003) | 10.0 GB | 5e66ff28eaf6ba89e49f153c0f077d34 |
-| [GenshinImpact_5.0.0.zip.004](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.004) | 10.0 GB | 39f014a760e27f77abed1989739c74c6 |
-| [GenshinImpact_5.0.0.zip.005](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.005) | 10.0 GB | 15f9405a199afba833f18fce288b9c7f |
-| [GenshinImpact_5.0.0.zip.006](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.006) | 10.0 GB | 881432ceab27987b1297c9eefb39f192 |
-| [GenshinImpact_5.0.0.zip.007](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.006) | 3.78 GB | 951f91992b428385294baf9b6c764d49 |
+
+| 下载链接 | 包大小 | 解压后的包大小 | MD5校验码 |
+| :---: | :---: | :---: | :---: |
+| [GenshinImpact_5.0.0.zip.001](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.001) | 10.0 GB | 20.0 GB | 1ebf5dbcbe43bebcda7a57a8d789092e |
+| [GenshinImpact_5.0.0.zip.002](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.002) | 10.0 GB | 20.0 GB | 57a67026c45d57c28e5b52e24e84cc04 |
+| [GenshinImpact_5.0.0.zip.003](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.003) | 10.0 GB | 20.0 GB | 5e66ff28eaf6ba89e49f153c0f077d34 |
+| [GenshinImpact_5.0.0.zip.004](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.004) | 10.0 GB | 20.0 GB | 39f014a760e27f77abed1989739c74c6 |
+| [GenshinImpact_5.0.0.zip.005](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.005) | 10.0 GB | 20.0 GB | 15f9405a199afba833f18fce288b9c7f |
+| [GenshinImpact_5.0.0.zip.006](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.006) | 10.0 GB | 20.0 GB | 881432ceab27987b1297c9eefb39f192 |
+| [GenshinImpact_5.0.0.zip.007](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.007) | 3.78 GB | 7.57 GB | 951f91992b428385294baf9b6c764d49 |
+| [Audio_Chinese_5.0.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/Audio_Chinese_5.0.0.zip) | 14.77 GB | 29.56 GB | 216b3e53f3c5c7e1290891696b2bbc66 |
+| [Audio_English(US)_5.0.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/Audio_English(US)_5.0.0.zip) | 17.23 GB | 34.47 GB | ecd59f31ec48c50f9051fdad39603d67 |
+| [Audio_Korean_5.0.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/Audio_Korean_5.0.0.zip) | 14.51 GB | 29.04 GB | 8bf09bd07413189b69a5a0512df97335 |
+| [Audio_Japanese_5.0.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/Audio_Japanese_5.0.0.zip) | 19.37 GB | 38.76 GB | 95efbd23e1bde2eb574f8090cc118109 |
+
 
 - 或者获取 4.8.0 -> 5.0.0 hdiff:
 
