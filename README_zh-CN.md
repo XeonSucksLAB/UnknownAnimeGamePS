@@ -37,6 +37,17 @@
 | [GenshinImpact_5.0.0.zip.006](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.006) | 10.0 GB | 881432ceab27987b1297c9eefb39f192 |
 | [GenshinImpact_5.0.0.zip.007](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.006) | 3.78 GB | 951f91992b428385294baf9b6c764d49 |
 
+- 或者获取 4.8.0 -> 5.0.0 hdiff:
+
+
+| 下载链接 | 包大小 | 解压后的包大小 | MD5校验码 |
+| :---: | :---: | :---: | :---: |
+| [game_4.8.0_5.0.0_hdiff_wZvKsUhQtnBEutrh.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/game_4.8.0_5.0.0_hdiff_wZvKsUhQtnBEutrh.zip) | 19.52 GB | 39.86 | ec0cc740e01c374cd53d48219c1a4aff |
+| [audio_ko-kr_4.8.0_5.0.0_hdiff_gTmBNUAGPpXxrRKC.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_ko-kr_4.8.0_5.0.0_hdiff_gTmBNUAGPpXxrRKC.zip) | 0.60 GB | 1.31 GB | 64c52d4065a5d5983b37faeb9796a3eb |
+| [audio_ja-jp_4.8.0_5.0.0_hdiff_LumPhRraNOjGJMnG.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_ja-jp_4.8.0_5.0.0_hdiff_LumPhRraNOjGJMnG.zip) | 0.71 GB | 1.63 GB | 934899593f7234bec937fca98c0b0bed |
+| [audio_zh-cn_4.8.0_5.0.0_hdiff_ZZiDHvYQeHGKuFeP.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_zh-cn_4.8.0_5.0.0_hdiff_ZZiDHvYQeHGKuFeP.zip) | 0.62 GB | 1.35 GB | c1073373d6c7b3680217335dc346de50 |
+| [audio_en-us_4.8.0_5.0.0_hdiff_vsfAECOkroqoZSqK.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_en-us_4.8.0_5.0.0_hdiff_vsfAECOkroqoZSqK.zip) | 0.74 GB | 1.58 GB | b5cb77749a0e2fc0e85b6b1ee319a7e9 |
+
 - 从这里下载补丁。[OSREL (国际服)](https://watchandy.me/version.dll) [CNREL (国服)](https://watchandy.me/cn/version.dll)
 - 将 `version.dll` 放入游戏客户端的文件夹中。
 - 下载旧版本的 [mihoyonet.dll](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20231030132335_iOEfPMcbrXpiA8Ca/ScatteredFiles/GenshinImpact_Data/Plugins/mihoyonet.dll)（4.2.0版）。
