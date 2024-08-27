@@ -14,7 +14,8 @@
 * 抽卡系统
 * 联机模式 *部分* 可用（-）
 * 通过控制台生成怪物
-* 背包功能（接收物品/角色，升级物品/角色等）（-）
+* 背包功能（接收物品/角色，升级物品/角色等)
+* 茶壶
 
 # 收藏历史图表
 [![收藏历史图表](https://api.star-history.com/svg?repos=XeonSucksLAB/UnknownAnimeGamePS&type=Date)](https://star-history.com/#XeonSucksLAB/UnknownAnimeGamePS&Date)
