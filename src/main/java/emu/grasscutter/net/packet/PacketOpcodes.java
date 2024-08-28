@@ -431,8 +431,8 @@ public class PacketOpcodes {
     public static final int CalcWeaponUpgradeReturnItemsRsp = 6706;
     public static final int SetEquipLockStateReq = 5750;
     public static final int SetEquipLockStateRsp = 26633;
-    public static final int AvatarUpgradeReq = 5978;
-    public static final int AvatarUpgradeRsp = 1;
+    public static final int AvatarUpgradeReq = 1568;
+    public static final int AvatarUpgradeRsp = 512;
     public static final int AvatarSkillUpgradeReq = 25062;
     public static final int AvatarSkillUpgradeRsp = 7799;
     public static final int AvatarUnlockTalentNotify = 28793;
