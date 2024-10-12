@@ -1377,8 +1377,10 @@ public class ScriptLib {
         var scriptManager = this.getSceneScriptManager();
         if (scriptManager == null) return 1;
         var scene = scriptManager.getScene();
+        var entity = scene.getEntityById(getCurrentEntity().get().id);
+        if (entity == null) return 2;
         scene.runWhenHostInitialized(() -> scene.broadcastPacket(
-                new PacketServerGlobalValueChangeNotify(entityId, sgvName, value)));
+                new PacketServerGlobalValueChangeNotify(entity, sgvName, value)));
         return 0;
     }
 
