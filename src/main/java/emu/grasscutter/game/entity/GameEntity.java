@@ -21,7 +21,7 @@ import lombok.*;
 
 public abstract class GameEntity {
     @Getter private final Scene scene;
-    public int id;
+    @Getter public int id;
     @Getter @Setter private SpawnDataEntry spawnEntry;
 
     @Getter @Setter private int blockId;
