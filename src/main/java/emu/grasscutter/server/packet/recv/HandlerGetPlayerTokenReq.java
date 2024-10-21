@@ -54,7 +54,7 @@ public class HandlerGetPlayerTokenReq extends PacketHandler {
                 exists.onLogout(); // must save immediately , or the below will load old data
                 existsSession.close();
                 Grasscutter.getLogger()
-                    .warn("Player {} was kicked due to duplicated login", account.getUsername());
+                        .warn("Player {} was kicked due to duplicated login", account.getUsername());
                 kicked = true;
             }
         }
@@ -65,7 +65,7 @@ public class HandlerGetPlayerTokenReq extends PacketHandler {
         if (!kicked) {
             // Max players limit
             if (ACCOUNT.maxPlayer > -1
-                && Grasscutter.getGameServer().getPlayers().size() >= ACCOUNT.maxPlayer) {
+                    && Grasscutter.getGameServer().getPlayers().size() >= ACCOUNT.maxPlayer) {
                 session.close();
                 return;
             }
@@ -80,11 +80,11 @@ public class HandlerGetPlayerTokenReq extends PacketHandler {
 
         if (player == null) {
             var nextPlayerUid =
-                DatabaseHelper.getNextPlayerId(session.getAccount().getReservedPlayerUid());
+                    DatabaseHelper.getNextPlayerId(session.getAccount().getReservedPlayerUid());
 
             // Create player instance from event.
             player =
-                event.getPlayerClass().getDeclaredConstructor(GameSession.class).newInstance(session);
+                    event.getPlayerClass().getDeclaredConstructor(GameSession.class).newInstance(session);
 
             // Save to db
             DatabaseHelper.generatePlayerUid(player, nextPlayerUid);
@@ -97,8 +97,8 @@ public class HandlerGetPlayerTokenReq extends PacketHandler {
         if (session.getAccount().isBanned()) {
             session.setState(SessionState.ACCOUNT_BANNED);
             session.send(
-                new PacketGetPlayerTokenRsp(
-                    session, 21, "FORBID_CHEATING_PLUGINS", session.getAccount().getBanEndTime()));
+                    new PacketGetPlayerTokenRsp(
+                            session, 21, "FORBID_CHEATING_PLUGINS", session.getAccount().getBanEndTime()));
             return;
         }
 
@@ -130,11 +130,11 @@ public class HandlerGetPlayerTokenReq extends PacketHandler {
                     privateSignature.update(seedBytes);
 
                     session.send(
-                        new PacketGetPlayerTokenRsp(
-                            session,
-                            Utils.base64Encode(seedEncrypted),
-                            Utils.base64Encode(privateSignature.sign()),
-                            req.getKeyId()));
+                            new PacketGetPlayerTokenRsp(
+                                    session,
+                                    Utils.base64Encode(seedEncrypted),
+                                    Utils.base64Encode(privateSignature.sign()),
+                                    req.getKeyId()));
                 } catch (Exception ignored) {
                     // Only UA Patch users will have exception
                     var clientBytes = Utils.base64Decode(req.getClientRandKey());
@@ -142,7 +142,8 @@ public class HandlerGetPlayerTokenReq extends PacketHandler {
                     Crypto.xor(clientBytes, seed);
 
                     var base64str = Utils.base64Encode(clientBytes);
-                    session.send(new PacketGetPlayerTokenRsp(session, base64str, "bm90aGluZyBoZXJl", req.getKeyId()));
+                    session.send(
+                            new PacketGetPlayerTokenRsp(session, base64str, "bm90aGluZyBoZXJl", req.getKeyId()));
                 }
             } else {
                 // Send packet

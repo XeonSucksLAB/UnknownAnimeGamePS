@@ -4,7 +4,6 @@ import emu.grasscutter.command.Command;
 import emu.grasscutter.command.CommandHandler;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.server.packet.send.PacketWindSeedClientNotify;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -30,5 +29,4 @@ public final class WindyCommand implements CommandHandler {
             CommandHandler.sendMessage(sender, "Error reading Lua script: " + e.getMessage());
         }
     }
-
 }

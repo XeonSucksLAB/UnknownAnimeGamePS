@@ -30,14 +30,14 @@ public class PacketGadgetInteractRsp extends BasePacket {
     }
 
     public PacketGadgetInteractRsp(
-        int gadgetId, int gadgetEntityId, InteractType interact, InterOpType opType) {
+            int gadgetId, int gadgetEntityId, InteractType interact, InterOpType opType) {
         super(PacketOpcodes.GadgetInteractRsp);
 
         var proto =
-            GadgetInteractRsp.newBuilder()
-                .setGadgetEntityId(gadgetEntityId)
-                .setInteractType(interact)
-                .setGadgetId(gadgetId);
+                GadgetInteractRsp.newBuilder()
+                        .setGadgetEntityId(gadgetEntityId)
+                        .setInteractType(interact)
+                        .setGadgetId(gadgetId);
 
         if (opType != null) {
             proto.setOpType(opType);
