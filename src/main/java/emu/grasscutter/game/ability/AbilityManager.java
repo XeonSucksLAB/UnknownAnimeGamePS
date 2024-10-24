@@ -16,7 +16,6 @@ import emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddA
 import emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange;
 import emu.grasscutter.net.proto.AbilityMetaReInitOverrideMapOuterClass.AbilityMetaReInitOverrideMap;
 import emu.grasscutter.net.proto.AbilityMetaSetKilledStateOuterClass.AbilityMetaSetKilledState;
-import emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType;
 import emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry;
 import emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction;
 import emu.grasscutter.server.event.player.PlayerUseSkillEvent;
@@ -95,17 +94,17 @@ public final class AbilityManager extends BasePlayerManager {
 
         // TODO: fix the check
         // if (this.burstCasterId == entityId
-                // && (ability.getAvatarSkillStartIds().contains(this.burstSkillId) || skillInvincibility)) {
-            Grasscutter.getLogger()
-                    .trace(
-                            "Caster ID's {} burst successful, clearing energy and setting invulnerability",
-                            entityId);
-            this.abilityInvulnerable = true;
-            this.player
-                    .getEnergyManager()
-                    .handleEvtDoSkillSuccNotify(
-                            this.player.getSession(), this.burstSkillId, this.burstCasterId);
-            this.removePendingEnergyClear();
+        // && (ability.getAvatarSkillStartIds().contains(this.burstSkillId) || skillInvincibility)) {
+        Grasscutter.getLogger()
+                .trace(
+                        "Caster ID's {} burst successful, clearing energy and setting invulnerability",
+                        entityId);
+        this.abilityInvulnerable = true;
+        this.player
+                .getEnergyManager()
+                .handleEvtDoSkillSuccNotify(
+                        this.player.getSession(), this.burstSkillId, this.burstCasterId);
+        this.removePendingEnergyClear();
         // }
     }
 

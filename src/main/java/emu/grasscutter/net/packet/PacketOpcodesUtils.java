@@ -10,9 +10,7 @@ import java.util.stream.Collectors;
 public class PacketOpcodesUtils {
     public static final Set<Integer> LOOP_PACKETS =
             Set.of(
-                    PacketOpcodes.PingReq,
-                    PacketOpcodes.PingRsp,
-                    PacketOpcodes.WorldPlayerRTTNotify
+                    PacketOpcodes.PingReq, PacketOpcodes.PingRsp, PacketOpcodes.WorldPlayerRTTNotify
                     // PacketOpcodes.UnionCmdNotify,
                     // PacketOpcodes.SceneTimeNotify,
                     // PacketOpcodes.QueryPathReq,
@@ -27,7 +25,7 @@ public class PacketOpcodesUtils {
                     // PacketOpcodes.PlayerGameTimeNotify,
                     // PacketOpcodes.AvatarPropNotify,
                     // PacketOpcodes.AvatarSatiationDataNotify
-            );
+                    );
     private static final Int2ObjectMap<String> opcodeMap;
 
     static {

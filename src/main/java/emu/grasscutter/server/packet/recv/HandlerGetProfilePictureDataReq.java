@@ -11,7 +11,6 @@ public class HandlerGetProfilePictureDataReq extends PacketHandler {
 
     @Override
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
-        session.send(
-            new PacketGetProfilePictureDataRsp(session.getPlayer()));
+        session.send(new PacketGetProfilePictureDataRsp(session.getPlayer()));
     }
 }

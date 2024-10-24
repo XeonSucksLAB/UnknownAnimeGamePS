@@ -89,7 +89,7 @@ public final class GameServerPacketHandler {
 
         // Log unhandled packets
         if (GAME_INFO.logPackets == ServerDebugMode.MISSING
-                /* || GAME_INFO.logPackets == ServerDebugMode.ALL */) {
+        /* || GAME_INFO.logPackets == ServerDebugMode.ALL */ ) {
             Grasscutter.getLogger()
                     .info(
                             "Unhandled packet ("

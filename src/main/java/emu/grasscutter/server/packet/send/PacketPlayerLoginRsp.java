@@ -9,7 +9,6 @@ import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.PlayerLoginRspOuterClass.PlayerLoginRsp;
 import emu.grasscutter.net.proto.QueryCurrRegionHttpRspOuterClass;
 import emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo;
-import emu.grasscutter.net.proto.ResVersionConfigOuterClass;
 import emu.grasscutter.server.game.GameSession;
 import emu.grasscutter.server.http.dispatch.RegionHandler;
 import emu.grasscutter.utils.Crypto;
